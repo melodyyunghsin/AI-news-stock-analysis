@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Impact Analyzer</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 300px; padding: 10px; }
+    #result { margin-top: 10px; white-space: pre-wrap; }
+    select, input{ width: 100%; margin-top: 8px;}
+    button { width: 45%; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h3>Stock Impact Analyzer</h3>
+  <label for="stockSelect">Enter target stock name:</label>
+  <input type="text" id="stockSelect" placeholder="e.g., TSMC, NVDA, AAPL">
+  <button id="analyze">Analyze Article</button>
+  <div id="result"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
