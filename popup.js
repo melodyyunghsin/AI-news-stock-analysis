@@ -1,5 +1,5 @@
-const GEMINI_API_KEY = "AIzaSyD0IaVdQrYHpCItKACRQRBSVkeH0hiY5wQ";
-const ALPHA_KEY = "2W5QVPJ95L3TM01F";
+const GEMINI_API_KEY = "";
+const ALPHA_KEY = "";
 
 
 /***** Load ticker reliability data *****/
