@@ -3,18 +3,91 @@
 <head>
   <title>Stock Impact Analyzer</title>
   <style>
-    body { font-family: Arial, sans-serif; width: 300px; padding: 10px; }
-    #result { margin-top: 10px; white-space: pre-wrap; }
-    select, input{ width: 100%; margin-top: 8px;}
-    button { width: 45%; margin-top: 8px; }
+    body { 
+      font-family: Arial, sans-serif; 
+      width: 340px; 
+      padding: 8px; 
+    }
+
+    h3, h4 {
+      margin-bottom: 6px;
+    }
+
+    button, input { 
+      width: 100%; 
+      margin-top: 6px; 
+      padding: 6px;
+    }
+
+    #result { 
+      margin-top: 10px; 
+      white-space: pre-wrap; 
+    }
+
+    #price, #reliability {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .bookmark-button {
+      background: #eef;
+      border: 1px solid #99f;
+      padding: 4px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .remove-bookmark-button {
+      width: 30%;
+      background: #ffdddd;
+      border: 1px solid #ff9999;
+      padding: 4px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .high { background: #ccffcc; }
+    .medium { background: #fff2cc; }
+    .low { background: #ffdddd; }
+
+    hr {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
+
 <body>
+
   <h3>Stock Impact Analyzer</h3>
-  <label for="stockSelect">Enter target stock name:</label>
-  <input type="text" id="stockSelect" placeholder="e.g., TSMC, NVDA, AAPL">
+
+  <label>Enter Stock (Ticker):</label>
+  <input type="text" id="stockInput" placeholder="e.g., GM">
+
   <button id="analyze">Analyze Article</button>
+  <button id="bookmarkStock">Bookmark This Stock</button>
+
+  <h4>Your Bookmarked Stocks</h4>
+  <div id="bookmarks"></div>
+
+  <hr>
+
+  <h4>Price</h4>
+  <div id="price"></div>
+
+  <h4>Analysis</h4>
   <div id="result"></div>
+
+  <div id="reliability"></div>
+
   <script src="popup.js"></script>
 </body>
 </html>

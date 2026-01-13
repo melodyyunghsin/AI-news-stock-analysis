@@ -1,0 +1,287 @@
+{
+  "CRWD": {
+    "samples": 2152,
+    "direction_accuracy": 0.4428438661710037,
+    "avg_hierarchical_score": 0.3438661710037174
+  },
+  "OKTA": {
+    "samples": 1309,
+    "direction_accuracy": 0.4102368220015279,
+    "avg_hierarchical_score": 0.3239113827349121
+  },
+  "ZS": {
+    "samples": 1295,
+    "direction_accuracy": 0.4108108108108108,
+    "avg_hierarchical_score": 0.3204633204633205
+  },
+  "GM": {
+    "samples": 78,
+    "direction_accuracy": 0.4358974358974359,
+    "avg_hierarchical_score": 0.3076923076923077
+  },
+  "NIO": {
+    "samples": 4001,
+    "direction_accuracy": 0.37215696075981,
+    "avg_hierarchical_score": 0.2921769557610597
+  },
+  "SWKS": {
+    "samples": 1538,
+    "direction_accuracy": 0.4089726918075422,
+    "avg_hierarchical_score": 0.2903120936280884
+  },
+  "TEAM": {
+    "samples": 845,
+    "direction_accuracy": 0.3633136094674556,
+    "avg_hierarchical_score": 0.2810650887573964
+  },
+  "MU": {
+    "samples": 6002,
+    "direction_accuracy": 0.3915361546151283,
+    "avg_hierarchical_score": 0.2796567810729757
+  },
+  "ON": {
+    "samples": 1231,
+    "direction_accuracy": 0.3736799350121852,
+    "avg_hierarchical_score": 0.2749796913078797
+  },
+  "BA": {
+    "samples": 3652,
+    "direction_accuracy": 0.3847207009857612,
+    "avg_hierarchical_score": 0.2749178532311062
+  },
+  "AAOI": {
+    "samples": 1186,
+    "direction_accuracy": 0.3549747048903878,
+    "avg_hierarchical_score": 0.2748735244519393
+  },
+  "BB": {
+    "samples": 1135,
+    "direction_accuracy": 0.3312775330396476,
+    "avg_hierarchical_score": 0.2665198237885463
+  },
+  "AMD": {
+    "samples": 8155,
+    "direction_accuracy": 0.3572041692213366,
+    "avg_hierarchical_score": 0.2646842427958308
+  },
+  "SMCI": {
+    "samples": 133,
+    "direction_accuracy": 0.3308270676691729,
+    "avg_hierarchical_score": 0.2593984962406015
+  },
+  "NVDA": {
+    "samples": 9884,
+    "direction_accuracy": 0.325273168757588,
+    "avg_hierarchical_score": 0.2443342776203966
+  },
+  "DELL": {
+    "samples": 1584,
+    "direction_accuracy": 0.3377525252525252,
+    "avg_hierarchical_score": 0.2357954545454545
+  },
+  "NOW": {
+    "samples": 1776,
+    "direction_accuracy": 0.321509009009009,
+    "avg_hierarchical_score": 0.2317004504504504
+  },
+  "AMAT": {
+    "samples": 3931,
+    "direction_accuracy": 0.3411345713558891,
+    "avg_hierarchical_score": 0.2292037649453065
+  },
+  "GE": {
+    "samples": 7505,
+    "direction_accuracy": 0.3225849433710859,
+    "avg_hierarchical_score": 0.2222518321119254
+  },
+  "TSLA": {
+    "samples": 6606,
+    "direction_accuracy": 0.2974568574023615,
+    "avg_hierarchical_score": 0.2166969421737814
+  },
+  "NOK": {
+    "samples": 3285,
+    "direction_accuracy": 0.3223744292237443,
+    "avg_hierarchical_score": 0.2143074581430746
+  },
+  "INTC": {
+    "samples": 8024,
+    "direction_accuracy": 0.3032153539381854,
+    "avg_hierarchical_score": 0.2089980059820538
+  },
+  "AMZN": {
+    "samples": 3835,
+    "direction_accuracy": 0.3029986962190352,
+    "avg_hierarchical_score": 0.2044328552803129
+  },
+  "PANW": {
+    "samples": 4162,
+    "direction_accuracy": 0.2789524267179241,
+    "avg_hierarchical_score": 0.2008649687650168
+  },
+  "MSFT": {
+    "samples": 6069,
+    "direction_accuracy": 0.2824188498928983,
+    "avg_hierarchical_score": 0.1966551326412918
+  },
+  "HPQ": {
+    "samples": 3885,
+    "direction_accuracy": 0.2893178893178893,
+    "avg_hierarchical_score": 0.196010296010296
+  },
+  "AAPL": {
+    "samples": 6462,
+    "direction_accuracy": 0.281027545651501,
+    "avg_hierarchical_score": 0.1955277004023522
+  },
+  "CRM": {
+    "samples": 6911,
+    "direction_accuracy": 0.2783967587903342,
+    "avg_hierarchical_score": 0.1920850817537259
+  },
+  "CAT": {
+    "samples": 6699,
+    "direction_accuracy": 0.2779519331243469,
+    "avg_hierarchical_score": 0.1896551724137931
+  },
+  "ADBE": {
+    "samples": 5836,
+    "direction_accuracy": 0.2655928718300205,
+    "avg_hierarchical_score": 0.1843728581220013
+  },
+  "QCOM": {
+    "samples": 7694,
+    "direction_accuracy": 0.2586430985183259,
+    "avg_hierarchical_score": 0.1817000259942812
+  },
+  "HPE": {
+    "samples": 1494,
+    "direction_accuracy": 0.2637215528781794,
+    "avg_hierarchical_score": 0.1770414993306559
+  },
+  "F": {
+    "samples": 1362,
+    "direction_accuracy": 0.2430249632892804,
+    "avg_hierarchical_score": 0.1662995594713656
+  },
+  "ADI": {
+    "samples": 3206,
+    "direction_accuracy": 0.2361197754210854,
+    "avg_hierarchical_score": 0.1614160948222083
+  },
+  "MRVL": {
+    "samples": 3007,
+    "direction_accuracy": 0.2238111074160292,
+    "avg_hierarchical_score": 0.160458929165281
+  },
+  "TSM": {
+    "samples": 4606,
+    "direction_accuracy": 0.2338254450716456,
+    "avg_hierarchical_score": 0.1603343465045592
+  },
+  "ERIC": {
+    "samples": 2495,
+    "direction_accuracy": 0.227254509018036,
+    "avg_hierarchical_score": 0.1557114228456914
+  },
+  "DE": {
+    "samples": 3446,
+    "direction_accuracy": 0.2164828786999419,
+    "avg_hierarchical_score": 0.1485780615206036
+  },
+  "GOOG": {
+    "samples": 9637,
+    "direction_accuracy": 0.2107502334751478,
+    "avg_hierarchical_score": 0.1468818096918128
+  },
+  "ASML": {
+    "samples": 2220,
+    "direction_accuracy": 0.2076576576576576,
+    "avg_hierarchical_score": 0.1459459459459459
+  },
+  "MMM": {
+    "samples": 3731,
+    "direction_accuracy": 0.2063789868667917,
+    "avg_hierarchical_score": 0.1397748592870544
+  },
+  "ORCL": {
+    "samples": 7115,
+    "direction_accuracy": 0.1994378074490513,
+    "avg_hierarchical_score": 0.1371749824314828
+  },
+  "EMR": {
+    "samples": 2278,
+    "direction_accuracy": 0.1962247585601404,
+    "avg_hierarchical_score": 0.1343283582089552
+  },
+  "ROK": {
+    "samples": 1650,
+    "direction_accuracy": 0.1872727272727272,
+    "avg_hierarchical_score": 0.1263636363636363
+  },
+  "TXN": {
+    "samples": 4026,
+    "direction_accuracy": 0.1815697963238947,
+    "avg_hierarchical_score": 0.1233233979135618
+  },
+  "NTAP": {
+    "samples": 2978,
+    "direction_accuracy": 0.1823371390194761,
+    "avg_hierarchical_score": 0.1230691739422431
+  },
+  "TM": {
+    "samples": 5422,
+    "direction_accuracy": 0.1591663592770195,
+    "avg_hierarchical_score": 0.1091848026558465
+  },
+  "CSCO": {
+    "samples": 1055,
+    "direction_accuracy": 0.1393364928909952,
+    "avg_hierarchical_score": 0.0976303317535545
+  },
+  "GOOGL": {
+    "samples": 1350,
+    "direction_accuracy": 0.117037037037037,
+    "avg_hierarchical_score": 0.0781481481481481
+  },
+  "KLAC": {
+    "samples": 1128,
+    "direction_accuracy": 0.0789007092198581,
+    "avg_hierarchical_score": 0.051418439716312
+  },
+  "LOGI": {
+    "samples": 683,
+    "direction_accuracy": 0.068814055636896,
+    "avg_hierarchical_score": 0.0490483162518301
+  },
+  "LRCX": {
+    "samples": 657,
+    "direction_accuracy": 0.0715372907153729,
+    "avg_hierarchical_score": 0.0487062404870624
+  },
+  "AVGO": {
+    "samples": 2102,
+    "direction_accuracy": 0.0689819219790675,
+    "avg_hierarchical_score": 0.0459086584205518
+  },
+  "GD": {
+    "samples": 1233,
+    "direction_accuracy": 0.0608272506082725,
+    "avg_hierarchical_score": 0.0437956204379562
+  },
+  "NXPI": {
+    "samples": 1072,
+    "direction_accuracy": 0.0578358208955223,
+    "avg_hierarchical_score": 0.0382462686567164
+  },
+  "HMC": {
+    "samples": 1419,
+    "direction_accuracy": 0.0507399577167019,
+    "avg_hierarchical_score": 0.0369978858350951
+  },
+  "JBL": {
+    "samples": 1189,
+    "direction_accuracy": 0.0454163162321278,
+    "avg_hierarchical_score": 0.0302775441547518
+  }
+}
