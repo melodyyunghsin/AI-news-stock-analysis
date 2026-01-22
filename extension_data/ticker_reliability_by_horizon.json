@@ -1,0 +1,2111 @@
+{
+  "GM": {
+    "1d": {
+      "samples": 78,
+      "direction_accuracy": 0.4358974358974359,
+      "avg_hierarchical_score": 0.27564102564102566,
+      "strength_accuracy_conditional": 0.11538461538461539,
+      "avg_strength_distance": 0.8235294117647058
+    },
+    "3d": {
+      "samples": 78,
+      "direction_accuracy": 0.4358974358974359,
+      "avg_hierarchical_score": 0.3076923076923077,
+      "strength_accuracy_conditional": 0.1794871794871795,
+      "avg_strength_distance": 0.6470588235294118
+    },
+    "5d": {
+      "samples": 78,
+      "direction_accuracy": 0.46153846153846156,
+      "avg_hierarchical_score": 0.32051282051282054,
+      "strength_accuracy_conditional": 0.1794871794871795,
+      "avg_strength_distance": 0.6944444444444444
+    },
+    "10d": {
+      "samples": 66,
+      "direction_accuracy": 0.45454545454545453,
+      "avg_hierarchical_score": 0.3484848484848485,
+      "strength_accuracy_conditional": 0.24242424242424243,
+      "avg_strength_distance": 0.5666666666666667
+    },
+    "21d": {
+      "samples": 9,
+      "direction_accuracy": 0.0,
+      "avg_hierarchical_score": 0.0,
+      "strength_accuracy_conditional": 0.0,
+      "avg_strength_distance": null
+    }
+  },
+  "NIO": {
+    "1d": {
+      "samples": 4001,
+      "direction_accuracy": 0.37715571107223195,
+      "avg_hierarchical_score": 0.27430642339415146,
+      "strength_accuracy_conditional": 0.171457135716071,
+      "avg_strength_distance": 0.685222001325381
+    },
+    "3d": {
+      "samples": 4001,
+      "direction_accuracy": 0.37215696075981003,
+      "avg_hierarchical_score": 0.29217695576105973,
+      "strength_accuracy_conditional": 0.21219695076230943,
+      "avg_strength_distance": 0.5661517797179315
+    },
+    "5d": {
+      "samples": 4001,
+      "direction_accuracy": 0.3834041489627593,
+      "avg_hierarchical_score": 0.3060484878780305,
+      "strength_accuracy_conditional": 0.22869282679330166,
+      "avg_strength_distance": 0.529986962190352
+    },
+    "10d": {
+      "samples": 3997,
+      "direction_accuracy": 0.39154365774330746,
+      "avg_hierarchical_score": 0.32261696272204154,
+      "strength_accuracy_conditional": 0.2536902677007756,
+      "avg_strength_distance": 0.4619808306709265
+    },
+    "21d": {
+      "samples": 3962,
+      "direction_accuracy": 0.38490661282180716,
+      "avg_hierarchical_score": 0.31852599697122663,
+      "strength_accuracy_conditional": 0.25214538112064616,
+      "avg_strength_distance": 0.46295081967213114
+    }
+  },
+  "CRWD": {
+    "1d": {
+      "samples": 2152,
+      "direction_accuracy": 0.4038104089219331,
+      "avg_hierarchical_score": 0.2688197026022305,
+      "strength_accuracy_conditional": 0.13382899628252787,
+      "avg_strength_distance": 0.8929804372842347
+    },
+    "3d": {
+      "samples": 2152,
+      "direction_accuracy": 0.44284386617100374,
+      "avg_hierarchical_score": 0.34386617100371747,
+      "strength_accuracy_conditional": 0.24488847583643122,
+      "avg_strength_distance": 0.5194123819517313
+    },
+    "5d": {
+      "samples": 2152,
+      "direction_accuracy": 0.4637546468401487,
+      "avg_hierarchical_score": 0.3840613382899628,
+      "strength_accuracy_conditional": 0.30436802973977695,
+      "avg_strength_distance": 0.4228456913827655
+    },
+    "10d": {
+      "samples": 2144,
+      "direction_accuracy": 0.47201492537313433,
+      "avg_hierarchical_score": 0.39505597014925375,
+      "strength_accuracy_conditional": 0.3180970149253731,
+      "avg_strength_distance": 0.37648221343873517
+    },
+    "21d": {
+      "samples": 2078,
+      "direction_accuracy": 0.48893166506256014,
+      "avg_hierarchical_score": 0.4326275264677575,
+      "strength_accuracy_conditional": 0.3763233878729548,
+      "avg_strength_distance": 0.27165354330708663
+    }
+  },
+  "ON": {
+    "1d": {
+      "samples": 1231,
+      "direction_accuracy": 0.3915515840779854,
+      "avg_hierarchical_score": 0.26726238830219334,
+      "strength_accuracy_conditional": 0.1429731925264013,
+      "avg_strength_distance": 0.8360995850622407
+    },
+    "3d": {
+      "samples": 1231,
+      "direction_accuracy": 0.3736799350121852,
+      "avg_hierarchical_score": 0.27497969130787975,
+      "strength_accuracy_conditional": 0.17627944760357434,
+      "avg_strength_distance": 0.6652173913043479
+    },
+    "5d": {
+      "samples": 1231,
+      "direction_accuracy": 0.3972380178716491,
+      "avg_hierarchical_score": 0.30869212022745735,
+      "strength_accuracy_conditional": 0.22014622258326563,
+      "avg_strength_distance": 0.558282208588957
+    },
+    "10d": {
+      "samples": 1229,
+      "direction_accuracy": 0.3807973962571196,
+      "avg_hierarchical_score": 0.3075671277461351,
+      "strength_accuracy_conditional": 0.23433685923515052,
+      "avg_strength_distance": 0.48717948717948717
+    },
+    "21d": {
+      "samples": 1218,
+      "direction_accuracy": 0.3645320197044335,
+      "avg_hierarchical_score": 0.3045977011494253,
+      "strength_accuracy_conditional": 0.24466338259441708,
+      "avg_strength_distance": 0.4369369369369369
+    }
+  },
+  "TEAM": {
+    "1d": {
+      "samples": 845,
+      "direction_accuracy": 0.3739644970414201,
+      "avg_hierarchical_score": 0.2650887573964497,
+      "strength_accuracy_conditional": 0.15621301775147928,
+      "avg_strength_distance": 0.7468354430379747
+    },
+    "3d": {
+      "samples": 845,
+      "direction_accuracy": 0.3633136094674556,
+      "avg_hierarchical_score": 0.28106508875739644,
+      "strength_accuracy_conditional": 0.19881656804733727,
+      "avg_strength_distance": 0.5244299674267101
+    },
+    "5d": {
+      "samples": 845,
+      "direction_accuracy": 0.35976331360946745,
+      "avg_hierarchical_score": 0.2846153846153846,
+      "strength_accuracy_conditional": 0.20946745562130178,
+      "avg_strength_distance": 0.4934210526315789
+    },
+    "10d": {
+      "samples": 841,
+      "direction_accuracy": 0.3947681331747919,
+      "avg_hierarchical_score": 0.3192627824019025,
+      "strength_accuracy_conditional": 0.2437574316290131,
+      "avg_strength_distance": 0.4789156626506024
+    },
+    "21d": {
+      "samples": 836,
+      "direction_accuracy": 0.38995215311004783,
+      "avg_hierarchical_score": 0.32954545454545453,
+      "strength_accuracy_conditional": 0.26913875598086123,
+      "avg_strength_distance": 0.3588957055214724
+    }
+  },
+  "ZS": {
+    "1d": {
+      "samples": 1295,
+      "direction_accuracy": 0.3722007722007722,
+      "avg_hierarchical_score": 0.2633204633204633,
+      "strength_accuracy_conditional": 0.15444015444015444,
+      "avg_strength_distance": 0.7282157676348547
+    },
+    "3d": {
+      "samples": 1295,
+      "direction_accuracy": 0.41081081081081083,
+      "avg_hierarchical_score": 0.3204633204633205,
+      "strength_accuracy_conditional": 0.23011583011583012,
+      "avg_strength_distance": 0.5413533834586466
+    },
+    "5d": {
+      "samples": 1295,
+      "direction_accuracy": 0.3907335907335907,
+      "avg_hierarchical_score": 0.3216216216216216,
+      "strength_accuracy_conditional": 0.2525096525096525,
+      "avg_strength_distance": 0.45454545454545453
+    },
+    "10d": {
+      "samples": 1288,
+      "direction_accuracy": 0.3936335403726708,
+      "avg_hierarchical_score": 0.3408385093167702,
+      "strength_accuracy_conditional": 0.28804347826086957,
+      "avg_strength_distance": 0.33727810650887574
+    },
+    "21d": {
+      "samples": 1267,
+      "direction_accuracy": 0.40173638516179955,
+      "avg_hierarchical_score": 0.3516179952644041,
+      "strength_accuracy_conditional": 0.3014996053670087,
+      "avg_strength_distance": 0.3182711198428291
+    }
+  },
+  "BA": {
+    "1d": {
+      "samples": 3652,
+      "direction_accuracy": 0.365553121577218,
+      "avg_hierarchical_score": 0.2588992332968237,
+      "strength_accuracy_conditional": 0.15224534501642936,
+      "avg_strength_distance": 0.7123595505617978
+    },
+    "3d": {
+      "samples": 3652,
+      "direction_accuracy": 0.3847207009857612,
+      "avg_hierarchical_score": 0.27491785323110624,
+      "strength_accuracy_conditional": 0.16511500547645125,
+      "avg_strength_distance": 0.698220640569395
+    },
+    "5d": {
+      "samples": 3652,
+      "direction_accuracy": 0.39950711938663747,
+      "avg_hierarchical_score": 0.2786144578313253,
+      "strength_accuracy_conditional": 0.15772179627601315,
+      "avg_strength_distance": 0.7840986977381769
+    },
+    "10d": {
+      "samples": 3643,
+      "direction_accuracy": 0.42355201756793853,
+      "avg_hierarchical_score": 0.29632171287400494,
+      "strength_accuracy_conditional": 0.16909140818007137,
+      "avg_strength_distance": 0.7790019442644199
+    },
+    "21d": {
+      "samples": 3585,
+      "direction_accuracy": 0.40557880055788004,
+      "avg_hierarchical_score": 0.28633193863319384,
+      "strength_accuracy_conditional": 0.16708507670850767,
+      "avg_strength_distance": 0.7565337001375516
+    }
+  },
+  "OKTA": {
+    "1d": {
+      "samples": 1309,
+      "direction_accuracy": 0.359816653934301,
+      "avg_hierarchical_score": 0.25362872421695953,
+      "strength_accuracy_conditional": 0.14744079449961803,
+      "avg_strength_distance": 0.7261146496815286
+    },
+    "3d": {
+      "samples": 1309,
+      "direction_accuracy": 0.4102368220015279,
+      "avg_hierarchical_score": 0.32391138273491216,
+      "strength_accuracy_conditional": 0.23758594346829642,
+      "avg_strength_distance": 0.5121042830540037
+    },
+    "5d": {
+      "samples": 1309,
+      "direction_accuracy": 0.40565317035905274,
+      "avg_hierarchical_score": 0.3319327731092437,
+      "strength_accuracy_conditional": 0.2582123758594347,
+      "avg_strength_distance": 0.4519774011299435
+    },
+    "10d": {
+      "samples": 1307,
+      "direction_accuracy": 0.43075745983167557,
+      "avg_hierarchical_score": 0.36074980872226475,
+      "strength_accuracy_conditional": 0.2907421576128539,
+      "avg_strength_distance": 0.3996447602131439
+    },
+    "21d": {
+      "samples": 1290,
+      "direction_accuracy": 0.4449612403100775,
+      "avg_hierarchical_score": 0.3821705426356589,
+      "strength_accuracy_conditional": 0.31937984496124033,
+      "avg_strength_distance": 0.3240418118466899
+    }
+  },
+  "MU": {
+    "1d": {
+      "samples": 6002,
+      "direction_accuracy": 0.36587804065311563,
+      "avg_hierarchical_score": 0.23792069310229924,
+      "strength_accuracy_conditional": 0.10996334555148284,
+      "avg_strength_distance": 0.9230418943533698
+    },
+    "3d": {
+      "samples": 6002,
+      "direction_accuracy": 0.3915361546151283,
+      "avg_hierarchical_score": 0.2796567810729757,
+      "strength_accuracy_conditional": 0.16777740753082307,
+      "avg_strength_distance": 0.7570212765957447
+    },
+    "5d": {
+      "samples": 6002,
+      "direction_accuracy": 0.38520493168943687,
+      "avg_hierarchical_score": 0.2886537820726425,
+      "strength_accuracy_conditional": 0.19210263245584805,
+      "avg_strength_distance": 0.6479238754325259
+    },
+    "10d": {
+      "samples": 5992,
+      "direction_accuracy": 0.3938584779706275,
+      "avg_hierarchical_score": 0.3029038718291055,
+      "strength_accuracy_conditional": 0.21194926568758343,
+      "avg_strength_distance": 0.6300847457627119
+    },
+    "21d": {
+      "samples": 5964,
+      "direction_accuracy": 0.39906103286384975,
+      "avg_hierarchical_score": 0.30818242790073774,
+      "strength_accuracy_conditional": 0.21730382293762576,
+      "avg_strength_distance": 0.6239495798319328
+    }
+  },
+  "SWKS": {
+    "1d": {
+      "samples": 1538,
+      "direction_accuracy": 0.3543563068920676,
+      "avg_hierarchical_score": 0.23732119635890767,
+      "strength_accuracy_conditional": 0.12028608582574772,
+      "avg_strength_distance": 0.8385321100917431
+    },
+    "3d": {
+      "samples": 1538,
+      "direction_accuracy": 0.40897269180754225,
+      "avg_hierarchical_score": 0.2903120936280884,
+      "strength_accuracy_conditional": 0.1716514954486346,
+      "avg_strength_distance": 0.7424483306836248
+    },
+    "5d": {
+      "samples": 1538,
+      "direction_accuracy": 0.4024707412223667,
+      "avg_hierarchical_score": 0.2935630689206762,
+      "strength_accuracy_conditional": 0.1846553966189857,
+      "avg_strength_distance": 0.6736672051696284
+    },
+    "10d": {
+      "samples": 1538,
+      "direction_accuracy": 0.406371911573472,
+      "avg_hierarchical_score": 0.3049414824447334,
+      "strength_accuracy_conditional": 0.2035110533159948,
+      "avg_strength_distance": 0.6096
+    },
+    "21d": {
+      "samples": 1532,
+      "direction_accuracy": 0.4086161879895561,
+      "avg_hierarchical_score": 0.3087467362924282,
+      "strength_accuracy_conditional": 0.20887728459530025,
+      "avg_strength_distance": 0.6118210862619808
+    }
+  },
+  "BB": {
+    "1d": {
+      "samples": 1135,
+      "direction_accuracy": 0.32422907488986785,
+      "avg_hierarchical_score": 0.2365638766519824,
+      "strength_accuracy_conditional": 0.14889867841409693,
+      "avg_strength_distance": 0.7092391304347826
+    },
+    "3d": {
+      "samples": 1135,
+      "direction_accuracy": 0.3312775330396476,
+      "avg_hierarchical_score": 0.2665198237885463,
+      "strength_accuracy_conditional": 0.20176211453744494,
+      "avg_strength_distance": 0.5292553191489362
+    },
+    "5d": {
+      "samples": 1135,
+      "direction_accuracy": 0.32422907488986785,
+      "avg_hierarchical_score": 0.26387665198237886,
+      "strength_accuracy_conditional": 0.20352422907488987,
+      "avg_strength_distance": 0.46195652173913043
+    },
+    "10d": {
+      "samples": 1132,
+      "direction_accuracy": 0.3365724381625442,
+      "avg_hierarchical_score": 0.2831272084805654,
+      "strength_accuracy_conditional": 0.22968197879858657,
+      "avg_strength_distance": 0.3779527559055118
+    },
+    "21d": {
+      "samples": 1126,
+      "direction_accuracy": 0.31793960923623443,
+      "avg_hierarchical_score": 0.2761989342806394,
+      "strength_accuracy_conditional": 0.2344582593250444,
+      "avg_strength_distance": 0.30726256983240224
+    }
+  },
+  "AMD": {
+    "1d": {
+      "samples": 8169,
+      "direction_accuracy": 0.33308850532500917,
+      "avg_hierarchical_score": 0.23124005386216184,
+      "strength_accuracy_conditional": 0.1293916023993145,
+      "avg_strength_distance": 0.7699375229694965
+    },
+    "3d": {
+      "samples": 8155,
+      "direction_accuracy": 0.3572041692213366,
+      "avg_hierarchical_score": 0.2646842427958308,
+      "strength_accuracy_conditional": 0.17216431637032495,
+      "avg_strength_distance": 0.6656368005492619
+    },
+    "5d": {
+      "samples": 8145,
+      "direction_accuracy": 0.3607120933087784,
+      "avg_hierarchical_score": 0.2741559238796808,
+      "strength_accuracy_conditional": 0.1875997544505832,
+      "avg_strength_distance": 0.607215793056501
+    },
+    "10d": {
+      "samples": 8075,
+      "direction_accuracy": 0.3702786377708978,
+      "avg_hierarchical_score": 0.2907739938080495,
+      "strength_accuracy_conditional": 0.21126934984520124,
+      "avg_strength_distance": 0.5327759197324414
+    },
+    "21d": {
+      "samples": 7981,
+      "direction_accuracy": 0.3621100112767824,
+      "avg_hierarchical_score": 0.2896880090214259,
+      "strength_accuracy_conditional": 0.2172660067660694,
+      "avg_strength_distance": 0.5110726643598615
+    }
+  },
+  "AAOI": {
+    "1d": {
+      "samples": 1186,
+      "direction_accuracy": 0.31197301854974707,
+      "avg_hierarchical_score": 0.22892074198988197,
+      "strength_accuracy_conditional": 0.14586846543001686,
+      "avg_strength_distance": 0.6945945945945946
+    },
+    "3d": {
+      "samples": 1186,
+      "direction_accuracy": 0.35497470489038785,
+      "avg_hierarchical_score": 0.2748735244519393,
+      "strength_accuracy_conditional": 0.19477234401349072,
+      "avg_strength_distance": 0.684085510688836
+    },
+    "5d": {
+      "samples": 1186,
+      "direction_accuracy": 0.34317032040472173,
+      "avg_hierarchical_score": 0.2870994940978078,
+      "strength_accuracy_conditional": 0.23102866779089376,
+      "avg_strength_distance": 0.515970515970516
+    },
+    "10d": {
+      "samples": 1186,
+      "direction_accuracy": 0.3650927487352445,
+      "avg_hierarchical_score": 0.3157672849915683,
+      "strength_accuracy_conditional": 0.26644182124789206,
+      "avg_strength_distance": 0.44803695150115475
+    },
+    "21d": {
+      "samples": 1179,
+      "direction_accuracy": 0.33672603901611536,
+      "avg_hierarchical_score": 0.3006785411365564,
+      "strength_accuracy_conditional": 0.26463104325699743,
+      "avg_strength_distance": 0.3954659949622166
+    }
+  },
+  "DELL": {
+    "1d": {
+      "samples": 1584,
+      "direction_accuracy": 0.32891414141414144,
+      "avg_hierarchical_score": 0.21275252525252525,
+      "strength_accuracy_conditional": 0.09659090909090909,
+      "avg_strength_distance": 0.9788867562380038
+    },
+    "3d": {
+      "samples": 1584,
+      "direction_accuracy": 0.33775252525252525,
+      "avg_hierarchical_score": 0.23579545454545456,
+      "strength_accuracy_conditional": 0.13383838383838384,
+      "avg_strength_distance": 0.7009345794392523
+    },
+    "5d": {
+      "samples": 1584,
+      "direction_accuracy": 0.33396464646464646,
+      "avg_hierarchical_score": 0.24021464646464646,
+      "strength_accuracy_conditional": 0.14646464646464646,
+      "avg_strength_distance": 0.7901701323251418
+    },
+    "10d": {
+      "samples": 1581,
+      "direction_accuracy": 0.34282099936748894,
+      "avg_hierarchical_score": 0.24604680581910182,
+      "strength_accuracy_conditional": 0.14927261227071473,
+      "avg_strength_distance": 0.7712177121771218
+    },
+    "21d": {
+      "samples": 1561,
+      "direction_accuracy": 0.3254324151185138,
+      "avg_hierarchical_score": 0.242152466367713,
+      "strength_accuracy_conditional": 0.15887251761691223,
+      "avg_strength_distance": 0.6948818897637795
+    }
+  },
+  "AMAT": {
+    "1d": {
+      "samples": 3940,
+      "direction_accuracy": 0.3063451776649746,
+      "avg_hierarchical_score": 0.2035532994923858,
+      "strength_accuracy_conditional": 0.10076142131979696,
+      "avg_strength_distance": 0.8384424192212097
+    },
+    "3d": {
+      "samples": 3931,
+      "direction_accuracy": 0.3411345713558891,
+      "avg_hierarchical_score": 0.22920376494530653,
+      "strength_accuracy_conditional": 0.11727295853472398,
+      "avg_strength_distance": 0.8247576435495898
+    },
+    "5d": {
+      "samples": 3939,
+      "direction_accuracy": 0.345011424219345,
+      "avg_hierarchical_score": 0.23813150545823814,
+      "strength_accuracy_conditional": 0.13125158669713125,
+      "avg_strength_distance": 0.8094186902133922
+    },
+    "10d": {
+      "samples": 3939,
+      "direction_accuracy": 0.37065244986037066,
+      "avg_hierarchical_score": 0.25374460522975373,
+      "strength_accuracy_conditional": 0.13683676059913683,
+      "avg_strength_distance": 0.8376712328767123
+    },
+    "21d": {
+      "samples": 3916,
+      "direction_accuracy": 0.37665985699693566,
+      "avg_hierarchical_score": 0.2585546475995914,
+      "strength_accuracy_conditional": 0.1404494382022472,
+      "avg_strength_distance": 0.8616949152542372
+    }
+  },
+  "NVDA": {
+    "1d": {
+      "samples": 9884,
+      "direction_accuracy": 0.29805746661270743,
+      "avg_hierarchical_score": 0.2003743423715095,
+      "strength_accuracy_conditional": 0.10269121813031161,
+      "avg_strength_distance": 0.8526816021724372
+    },
+    "3d": {
+      "samples": 9884,
+      "direction_accuracy": 0.325273168757588,
+      "avg_hierarchical_score": 0.2443342776203966,
+      "strength_accuracy_conditional": 0.16339538648320517,
+      "avg_strength_distance": 0.6475894245723173
+    },
+    "5d": {
+      "samples": 9884,
+      "direction_accuracy": 0.3216309186564144,
+      "avg_hierarchical_score": 0.2552104411169567,
+      "strength_accuracy_conditional": 0.188789963577499,
+      "avg_strength_distance": 0.5240641711229946
+    },
+    "10d": {
+      "samples": 9845,
+      "direction_accuracy": 0.33062468257998984,
+      "avg_hierarchical_score": 0.2696800406297613,
+      "strength_accuracy_conditional": 0.20873539867953275,
+      "avg_strength_distance": 0.44823348694316434
+    },
+    "21d": {
+      "samples": 9602,
+      "direction_accuracy": 0.3497188085815455,
+      "avg_hierarchical_score": 0.2886377837950427,
+      "strength_accuracy_conditional": 0.2275567590085399,
+      "avg_strength_distance": 0.44282310899344846
+    }
+  },
+  "TSLA": {
+    "1d": {
+      "samples": 6606,
+      "direction_accuracy": 0.28337874659400547,
+      "avg_hierarchical_score": 0.19671510747805027,
+      "strength_accuracy_conditional": 0.11005146836209506,
+      "avg_strength_distance": 0.7553418803418803
+    },
+    "3d": {
+      "samples": 6606,
+      "direction_accuracy": 0.2974568574023615,
+      "avg_hierarchical_score": 0.2166969421737814,
+      "strength_accuracy_conditional": 0.13593702694520132,
+      "avg_strength_distance": 0.6687022900763359
+    },
+    "5d": {
+      "samples": 6606,
+      "direction_accuracy": 0.3013926733272782,
+      "avg_hierarchical_score": 0.22464426279140176,
+      "strength_accuracy_conditional": 0.1478958522555253,
+      "avg_strength_distance": 0.6127574083375188
+    },
+    "10d": {
+      "samples": 6579,
+      "direction_accuracy": 0.31342149262805896,
+      "avg_hierarchical_score": 0.23521811825505395,
+      "strength_accuracy_conditional": 0.15701474388204895,
+      "avg_strength_distance": 0.6071774975751697
+    },
+    "21d": {
+      "samples": 6429,
+      "direction_accuracy": 0.30175766060040443,
+      "avg_hierarchical_score": 0.22974023953958625,
+      "strength_accuracy_conditional": 0.1577228184787681,
+      "avg_strength_distance": 0.5860824742268042
+    }
+  },
+  "NOW": {
+    "1d": {
+      "samples": 1776,
+      "direction_accuracy": 0.2989864864864865,
+      "avg_hierarchical_score": 0.19256756756756757,
+      "strength_accuracy_conditional": 0.08614864864864864,
+      "avg_strength_distance": 0.9416195856873822
+    },
+    "3d": {
+      "samples": 1776,
+      "direction_accuracy": 0.32150900900900903,
+      "avg_hierarchical_score": 0.23170045045045046,
+      "strength_accuracy_conditional": 0.14189189189189189,
+      "avg_strength_distance": 0.7057793345008757
+    },
+    "5d": {
+      "samples": 1776,
+      "direction_accuracy": 0.33952702702702703,
+      "avg_hierarchical_score": 0.2491554054054054,
+      "strength_accuracy_conditional": 0.15878378378378377,
+      "avg_strength_distance": 0.6882255389718076
+    },
+    "10d": {
+      "samples": 1769,
+      "direction_accuracy": 0.36517806670435277,
+      "avg_hierarchical_score": 0.2733182589033352,
+      "strength_accuracy_conditional": 0.1814584511023177,
+      "avg_strength_distance": 0.6718266253869969
+    },
+    "21d": {
+      "samples": 1744,
+      "direction_accuracy": 0.37327981651376146,
+      "avg_hierarchical_score": 0.29357798165137616,
+      "strength_accuracy_conditional": 0.21387614678899083,
+      "avg_strength_distance": 0.6113671274961597
+    }
+  },
+  "NOK": {
+    "1d": {
+      "samples": 3285,
+      "direction_accuracy": 0.291324200913242,
+      "avg_hierarchical_score": 0.19193302891933028,
+      "strength_accuracy_conditional": 0.09254185692541857,
+      "avg_strength_distance": 0.9216300940438872
+    },
+    "3d": {
+      "samples": 3285,
+      "direction_accuracy": 0.3223744292237443,
+      "avg_hierarchical_score": 0.2143074581430746,
+      "strength_accuracy_conditional": 0.10624048706240487,
+      "avg_strength_distance": 0.9225684608120869
+    },
+    "5d": {
+      "samples": 3285,
+      "direction_accuracy": 0.3202435312024353,
+      "avg_hierarchical_score": 0.21841704718417046,
+      "strength_accuracy_conditional": 0.11659056316590563,
+      "avg_strength_distance": 0.9020912547528517
+    },
+    "10d": {
+      "samples": 3284,
+      "direction_accuracy": 0.3233861144945189,
+      "avg_hierarchical_score": 0.2222898903775883,
+      "strength_accuracy_conditional": 0.12119366626065774,
+      "avg_strength_distance": 0.9453860640301318
+    },
+    "21d": {
+      "samples": 3270,
+      "direction_accuracy": 0.3211009174311927,
+      "avg_hierarchical_score": 0.22232415902140673,
+      "strength_accuracy_conditional": 0.1235474006116208,
+      "avg_strength_distance": 0.960952380952381
+    }
+  },
+  "GE": {
+    "1d": {
+      "samples": 7505,
+      "direction_accuracy": 0.29140572951365756,
+      "avg_hierarchical_score": 0.19080612924716855,
+      "strength_accuracy_conditional": 0.09020652898067955,
+      "avg_strength_distance": 0.8861454046639232
+    },
+    "3d": {
+      "samples": 7505,
+      "direction_accuracy": 0.32258494337108595,
+      "avg_hierarchical_score": 0.2222518321119254,
+      "strength_accuracy_conditional": 0.12191872085276483,
+      "avg_strength_distance": 0.8157786038826931
+    },
+    "5d": {
+      "samples": 7505,
+      "direction_accuracy": 0.33284477015323116,
+      "avg_hierarchical_score": 0.2295802798134577,
+      "strength_accuracy_conditional": 0.12631578947368421,
+      "avg_strength_distance": 0.8382706164931946
+    },
+    "10d": {
+      "samples": 7502,
+      "direction_accuracy": 0.3495067981871501,
+      "avg_hierarchical_score": 0.24166888829645428,
+      "strength_accuracy_conditional": 0.13383097840575847,
+      "avg_strength_distance": 0.8546910755148741
+    },
+    "21d": {
+      "samples": 7475,
+      "direction_accuracy": 0.357056856187291,
+      "avg_hierarchical_score": 0.24862876254180602,
+      "strength_accuracy_conditional": 0.14020066889632107,
+      "avg_strength_distance": 0.8666167103784189
+    }
+  },
+  "INTC": {
+    "1d": {
+      "samples": 8024,
+      "direction_accuracy": 0.2735543369890329,
+      "avg_hierarchical_score": 0.1840727816550349,
+      "strength_accuracy_conditional": 0.09459122632103689,
+      "avg_strength_distance": 0.8218678815489749
+    },
+    "3d": {
+      "samples": 8024,
+      "direction_accuracy": 0.30321535393818544,
+      "avg_hierarchical_score": 0.20899800598205384,
+      "strength_accuracy_conditional": 0.11478065802592223,
+      "avg_strength_distance": 0.7735306206329634
+    },
+    "5d": {
+      "samples": 8024,
+      "direction_accuracy": 0.2979810568295115,
+      "avg_hierarchical_score": 0.20731555333998006,
+      "strength_accuracy_conditional": 0.11665004985044865,
+      "avg_strength_distance": 0.7820995399414471
+    },
+    "10d": {
+      "samples": 7999,
+      "direction_accuracy": 0.3050381297662208,
+      "avg_hierarchical_score": 0.20821352669083634,
+      "strength_accuracy_conditional": 0.11138892361545193,
+      "avg_strength_distance": 0.8352459016393443
+    },
+    "21d": {
+      "samples": 7887,
+      "direction_accuracy": 0.3073411943704831,
+      "avg_hierarchical_score": 0.21256498034740712,
+      "strength_accuracy_conditional": 0.11778876632433118,
+      "avg_strength_distance": 0.8250825082508251
+    }
+  },
+  "SMCI": {
+    "1d": {
+      "samples": 133,
+      "direction_accuracy": 0.2556390977443609,
+      "avg_hierarchical_score": 0.17669172932330826,
+      "strength_accuracy_conditional": 0.09774436090225563,
+      "avg_strength_distance": 0.9117647058823529
+    },
+    "3d": {
+      "samples": 133,
+      "direction_accuracy": 0.3308270676691729,
+      "avg_hierarchical_score": 0.2593984962406015,
+      "strength_accuracy_conditional": 0.18796992481203006,
+      "avg_strength_distance": 0.5681818181818182
+    },
+    "5d": {
+      "samples": 133,
+      "direction_accuracy": 0.2781954887218045,
+      "avg_hierarchical_score": 0.21804511278195488,
+      "strength_accuracy_conditional": 0.15789473684210525,
+      "avg_strength_distance": 0.5945945945945946
+    },
+    "10d": {
+      "samples": 132,
+      "direction_accuracy": 0.4772727272727273,
+      "avg_hierarchical_score": 0.3484848484848485,
+      "strength_accuracy_conditional": 0.2196969696969697,
+      "avg_strength_distance": 0.7619047619047619
+    },
+    "21d": {
+      "samples": 131,
+      "direction_accuracy": 0.4961832061068702,
+      "avg_hierarchical_score": 0.4198473282442748,
+      "strength_accuracy_conditional": 0.3435114503816794,
+      "avg_strength_distance": 0.4307692307692308
+    }
+  },
+  "MSFT": {
+    "1d": {
+      "samples": 6069,
+      "direction_accuracy": 0.25902125556104794,
+      "avg_hierarchical_score": 0.1753995715933432,
+      "strength_accuracy_conditional": 0.09177788762563849,
+      "avg_strength_distance": 0.8155216284987278
+    },
+    "3d": {
+      "samples": 6069,
+      "direction_accuracy": 0.28241884989289834,
+      "avg_hierarchical_score": 0.1966551326412918,
+      "strength_accuracy_conditional": 0.11089141538968529,
+      "avg_strength_distance": 0.7561260210035006
+    },
+    "5d": {
+      "samples": 6069,
+      "direction_accuracy": 0.3112539133300379,
+      "avg_hierarchical_score": 0.21288515406162464,
+      "strength_accuracy_conditional": 0.1145163947932114,
+      "avg_strength_distance": 0.795659078877713
+    },
+    "10d": {
+      "samples": 6029,
+      "direction_accuracy": 0.32061701774755347,
+      "avg_hierarchical_score": 0.21753192900978605,
+      "strength_accuracy_conditional": 0.11444684027201858,
+      "avg_strength_distance": 0.8147956544231764
+    },
+    "21d": {
+      "samples": 5807,
+      "direction_accuracy": 0.33959014981918373,
+      "avg_hierarchical_score": 0.2358360599276735,
+      "strength_accuracy_conditional": 0.13208197003616326,
+      "avg_strength_distance": 0.7723123732251521
+    }
+  },
+  "HPE": {
+    "1d": {
+      "samples": 1494,
+      "direction_accuracy": 0.25903614457831325,
+      "avg_hierarchical_score": 0.17202141900937082,
+      "strength_accuracy_conditional": 0.08500669344042838,
+      "avg_strength_distance": 0.8397932816537468
+    },
+    "3d": {
+      "samples": 1494,
+      "direction_accuracy": 0.2637215528781794,
+      "avg_hierarchical_score": 0.17704149933065597,
+      "strength_accuracy_conditional": 0.09036144578313253,
+      "avg_strength_distance": 0.850253807106599
+    },
+    "5d": {
+      "samples": 1494,
+      "direction_accuracy": 0.2677376171352075,
+      "avg_hierarchical_score": 0.18340026773761714,
+      "strength_accuracy_conditional": 0.09906291834002677,
+      "avg_strength_distance": 0.8025
+    },
+    "10d": {
+      "samples": 1489,
+      "direction_accuracy": 0.2860980523841504,
+      "avg_hierarchical_score": 0.19476158495634655,
+      "strength_accuracy_conditional": 0.10342511752854265,
+      "avg_strength_distance": 0.8169014084507042
+    },
+    "21d": {
+      "samples": 1477,
+      "direction_accuracy": 0.2843601895734597,
+      "avg_hierarchical_score": 0.1939742721733243,
+      "strength_accuracy_conditional": 0.1035883547731889,
+      "avg_strength_distance": 0.8214285714285714
+    }
+  },
+  "HPQ": {
+    "1d": {
+      "samples": 3885,
+      "direction_accuracy": 0.2579150579150579,
+      "avg_hierarchical_score": 0.17142857142857143,
+      "strength_accuracy_conditional": 0.08494208494208494,
+      "avg_strength_distance": 0.8483033932135728
+    },
+    "3d": {
+      "samples": 3885,
+      "direction_accuracy": 0.2893178893178893,
+      "avg_hierarchical_score": 0.19601029601029601,
+      "strength_accuracy_conditional": 0.10270270270270271,
+      "avg_strength_distance": 0.8211743772241993
+    },
+    "5d": {
+      "samples": 3885,
+      "direction_accuracy": 0.29009009009009007,
+      "avg_hierarchical_score": 0.19703989703989705,
+      "strength_accuracy_conditional": 0.10398970398970399,
+      "avg_strength_distance": 0.8402839396628217
+    },
+    "10d": {
+      "samples": 3883,
+      "direction_accuracy": 0.2948750965748133,
+      "avg_hierarchical_score": 0.2029358743239763,
+      "strength_accuracy_conditional": 0.11099665207313933,
+      "avg_strength_distance": 0.8331877729257642
+    },
+    "21d": {
+      "samples": 3863,
+      "direction_accuracy": 0.3077918716023816,
+      "avg_hierarchical_score": 0.21097592544654414,
+      "strength_accuracy_conditional": 0.1141599792907067,
+      "avg_strength_distance": 0.9024390243902439
+    }
+  },
+  "AMZN": {
+    "1d": {
+      "samples": 3835,
+      "direction_accuracy": 0.26258148631029987,
+      "avg_hierarchical_score": 0.17092568448500653,
+      "strength_accuracy_conditional": 0.07926988265971317,
+      "avg_strength_distance": 0.8907646474677259
+    },
+    "3d": {
+      "samples": 3835,
+      "direction_accuracy": 0.3029986962190352,
+      "avg_hierarchical_score": 0.2044328552803129,
+      "strength_accuracy_conditional": 0.10586701434159061,
+      "avg_strength_distance": 0.8227194492254734
+    },
+    "5d": {
+      "samples": 3835,
+      "direction_accuracy": 0.3345501955671447,
+      "avg_hierarchical_score": 0.23715775749674053,
+      "strength_accuracy_conditional": 0.13976531942633638,
+      "avg_strength_distance": 0.745128604832424
+    },
+    "10d": {
+      "samples": 3767,
+      "direction_accuracy": 0.3793469604459782,
+      "avg_hierarchical_score": 0.2808601008760287,
+      "strength_accuracy_conditional": 0.1823732413060791,
+      "avg_strength_distance": 0.6410076976906928
+    },
+    "21d": {
+      "samples": 3511,
+      "direction_accuracy": 0.412133295357448,
+      "avg_hierarchical_score": 0.3174309313585873,
+      "strength_accuracy_conditional": 0.22272856735972657,
+      "avg_strength_distance": 0.5749827228749136
+    }
+  },
+  "CAT": {
+    "1d": {
+      "samples": 6699,
+      "direction_accuracy": 0.2503358710255262,
+      "avg_hierarchical_score": 0.16823406478578892,
+      "strength_accuracy_conditional": 0.08613225854605165,
+      "avg_strength_distance": 0.8240906380441264
+    },
+    "3d": {
+      "samples": 6699,
+      "direction_accuracy": 0.2779519331243469,
+      "avg_hierarchical_score": 0.1896551724137931,
+      "strength_accuracy_conditional": 0.1013584117032393,
+      "avg_strength_distance": 0.8082706766917294
+    },
+    "5d": {
+      "samples": 6699,
+      "direction_accuracy": 0.2886998059411853,
+      "avg_hierarchical_score": 0.19428272876548738,
+      "strength_accuracy_conditional": 0.09986565158978952,
+      "avg_strength_distance": 0.8412616339193382
+    },
+    "10d": {
+      "samples": 6696,
+      "direction_accuracy": 0.29958183990442055,
+      "avg_hierarchical_score": 0.2025089605734767,
+      "strength_accuracy_conditional": 0.10543608124253286,
+      "avg_strength_distance": 0.8444666001994018
+    },
+    "21d": {
+      "samples": 6670,
+      "direction_accuracy": 0.29865067466266865,
+      "avg_hierarchical_score": 0.19880059970014993,
+      "strength_accuracy_conditional": 0.09895052473763119,
+      "avg_strength_distance": 0.8795180722891566
+    }
+  },
+  "CRM": {
+    "1d": {
+      "samples": 6911,
+      "direction_accuracy": 0.2482998118940819,
+      "avg_hierarchical_score": 0.1665460859499349,
+      "strength_accuracy_conditional": 0.08479236000578788,
+      "avg_strength_distance": 0.8304195804195804
+    },
+    "3d": {
+      "samples": 6911,
+      "direction_accuracy": 0.27839675879033426,
+      "avg_hierarchical_score": 0.19208508175372593,
+      "strength_accuracy_conditional": 0.10577340471711764,
+      "avg_strength_distance": 0.7874220374220374
+    },
+    "5d": {
+      "samples": 6911,
+      "direction_accuracy": 0.2928664447981479,
+      "avg_hierarchical_score": 0.20373317899001592,
+      "strength_accuracy_conditional": 0.11459991318188395,
+      "avg_strength_distance": 0.7514822134387352
+    },
+    "10d": {
+      "samples": 6905,
+      "direction_accuracy": 0.2963070238957277,
+      "avg_hierarchical_score": 0.2110789283128168,
+      "strength_accuracy_conditional": 0.12585083272990585,
+      "avg_strength_distance": 0.7478005865102639
+    },
+    "21d": {
+      "samples": 6830,
+      "direction_accuracy": 0.30161054172767204,
+      "avg_hierarchical_score": 0.21800878477306002,
+      "strength_accuracy_conditional": 0.13440702781844802,
+      "avg_strength_distance": 0.7271844660194174
+    }
+  },
+  "PANW": {
+    "1d": {
+      "samples": 4162,
+      "direction_accuracy": 0.25588659298414224,
+      "avg_hierarchical_score": 0.16338298894762135,
+      "strength_accuracy_conditional": 0.07087938491110043,
+      "avg_strength_distance": 0.9652582159624413
+    },
+    "3d": {
+      "samples": 4162,
+      "direction_accuracy": 0.2789524267179241,
+      "avg_hierarchical_score": 0.20086496876501683,
+      "strength_accuracy_conditional": 0.12277751081210957,
+      "avg_strength_distance": 0.7450473729543498
+    },
+    "5d": {
+      "samples": 4162,
+      "direction_accuracy": 0.2842383469485824,
+      "avg_hierarchical_score": 0.21540124939932725,
+      "strength_accuracy_conditional": 0.14656415185007207,
+      "avg_strength_distance": 0.5950972104818258
+    },
+    "10d": {
+      "samples": 4155,
+      "direction_accuracy": 0.29386281588447655,
+      "avg_hierarchical_score": 0.23574007220216606,
+      "strength_accuracy_conditional": 0.1776173285198556,
+      "avg_strength_distance": 0.4823914823914824
+    },
+    "21d": {
+      "samples": 4124,
+      "direction_accuracy": 0.28831231813773034,
+      "avg_hierarchical_score": 0.23484481086323958,
+      "strength_accuracy_conditional": 0.1813773035887488,
+      "avg_strength_distance": 0.4482758620689655
+    }
+  },
+  "AAPL": {
+    "1d": {
+      "samples": 6462,
+      "direction_accuracy": 0.2395543175487465,
+      "avg_hierarchical_score": 0.1610182606004333,
+      "strength_accuracy_conditional": 0.08248220365212008,
+      "avg_strength_distance": 0.8359173126614987
+    },
+    "3d": {
+      "samples": 6462,
+      "direction_accuracy": 0.28102754565150107,
+      "avg_hierarchical_score": 0.1955277004023522,
+      "strength_accuracy_conditional": 0.11002785515320335,
+      "avg_strength_distance": 0.7687224669603524
+    },
+    "5d": {
+      "samples": 6462,
+      "direction_accuracy": 0.28706282884555867,
+      "avg_hierarchical_score": 0.19962859795728877,
+      "strength_accuracy_conditional": 0.11219436706901888,
+      "avg_strength_distance": 0.7778975741239892
+    },
+    "10d": {
+      "samples": 6422,
+      "direction_accuracy": 0.3114294612270321,
+      "avg_hierarchical_score": 0.2123170351915291,
+      "strength_accuracy_conditional": 0.11320460915602616,
+      "avg_strength_distance": 0.829
+    },
+    "21d": {
+      "samples": 6234,
+      "direction_accuracy": 0.30429900545396216,
+      "avg_hierarchical_score": 0.20115495668912417,
+      "strength_accuracy_conditional": 0.09801090792428617,
+      "avg_strength_distance": 0.8961518186610438
+    }
+  },
+  "ADBE": {
+    "1d": {
+      "samples": 5836,
+      "direction_accuracy": 0.23817683344756682,
+      "avg_hierarchical_score": 0.1578135709389993,
+      "strength_accuracy_conditional": 0.0774503084304318,
+      "avg_strength_distance": 0.8532374100719424
+    },
+    "3d": {
+      "samples": 5836,
+      "direction_accuracy": 0.26559287183002056,
+      "avg_hierarchical_score": 0.18437285812200138,
+      "strength_accuracy_conditional": 0.10315284441398218,
+      "avg_strength_distance": 0.7812903225806451
+    },
+    "5d": {
+      "samples": 5836,
+      "direction_accuracy": 0.26079506511309114,
+      "avg_hierarchical_score": 0.1829163810829335,
+      "strength_accuracy_conditional": 0.10503769705277588,
+      "avg_strength_distance": 0.7555847568988173
+    },
+    "10d": {
+      "samples": 5822,
+      "direction_accuracy": 0.27739608381999314,
+      "avg_hierarchical_score": 0.194778426657506,
+      "strength_accuracy_conditional": 0.1121607694950189,
+      "avg_strength_distance": 0.7603715170278638
+    },
+    "21d": {
+      "samples": 5745,
+      "direction_accuracy": 0.3122715404699739,
+      "avg_hierarchical_score": 0.22515230635335073,
+      "strength_accuracy_conditional": 0.1380330722367276,
+      "avg_strength_distance": 0.7162764771460424
+    }
+  },
+  "F": {
+    "1d": {
+      "samples": 1362,
+      "direction_accuracy": 0.2290748898678414,
+      "avg_hierarchical_score": 0.1527165932452276,
+      "strength_accuracy_conditional": 0.0763582966226138,
+      "avg_strength_distance": 0.8589743589743589
+    },
+    "3d": {
+      "samples": 1362,
+      "direction_accuracy": 0.24302496328928047,
+      "avg_hierarchical_score": 0.16629955947136563,
+      "strength_accuracy_conditional": 0.08957415565345081,
+      "avg_strength_distance": 0.8006042296072508
+    },
+    "5d": {
+      "samples": 1362,
+      "direction_accuracy": 0.2305433186490455,
+      "avg_hierarchical_score": 0.1593245227606461,
+      "strength_accuracy_conditional": 0.0881057268722467,
+      "avg_strength_distance": 0.767515923566879
+    },
+    "10d": {
+      "samples": 1350,
+      "direction_accuracy": 0.25037037037037035,
+      "avg_hierarchical_score": 0.1737037037037037,
+      "strength_accuracy_conditional": 0.09703703703703703,
+      "avg_strength_distance": 0.7781065088757396
+    },
+    "21d": {
+      "samples": 1287,
+      "direction_accuracy": 0.24553224553224554,
+      "avg_hierarchical_score": 0.16705516705516704,
+      "strength_accuracy_conditional": 0.08857808857808858,
+      "avg_strength_distance": 0.8164556962025317
+    }
+  },
+  "QCOM": {
+    "1d": {
+      "samples": 7694,
+      "direction_accuracy": 0.22719001819599688,
+      "avg_hierarchical_score": 0.15174161684429424,
+      "strength_accuracy_conditional": 0.07629321549259163,
+      "avg_strength_distance": 0.8255148741418764
+    },
+    "3d": {
+      "samples": 7694,
+      "direction_accuracy": 0.25864309851832595,
+      "avg_hierarchical_score": 0.18170002599428126,
+      "strength_accuracy_conditional": 0.10475695347023654,
+      "avg_strength_distance": 0.7361809045226131
+    },
+    "5d": {
+      "samples": 7694,
+      "direction_accuracy": 0.2590330127371978,
+      "avg_hierarchical_score": 0.18423446841694827,
+      "strength_accuracy_conditional": 0.10943592409669872,
+      "avg_strength_distance": 0.7200200702458606
+    },
+    "10d": {
+      "samples": 7685,
+      "direction_accuracy": 0.26844502277163307,
+      "avg_hierarchical_score": 0.1877683799609629,
+      "strength_accuracy_conditional": 0.10709173715029278,
+      "avg_strength_distance": 0.7644207464857005
+    },
+    "21d": {
+      "samples": 7650,
+      "direction_accuracy": 0.2568627450980392,
+      "avg_hierarchical_score": 0.1799346405228758,
+      "strength_accuracy_conditional": 0.10300653594771242,
+      "avg_strength_distance": 0.759796437659033
+    }
+  },
+  "MRVL": {
+    "1d": {
+      "samples": 3007,
+      "direction_accuracy": 0.2178250748254074,
+      "avg_hierarchical_score": 0.1504822081809112,
+      "strength_accuracy_conditional": 0.08313934153641503,
+      "avg_strength_distance": 0.8015267175572519
+    },
+    "3d": {
+      "samples": 3007,
+      "direction_accuracy": 0.22381110741602928,
+      "avg_hierarchical_score": 0.160458929165281,
+      "strength_accuracy_conditional": 0.09710675091453276,
+      "avg_strength_distance": 0.7384843982169391
+    },
+    "5d": {
+      "samples": 3007,
+      "direction_accuracy": 0.2268041237113402,
+      "avg_hierarchical_score": 0.16611240438975725,
+      "strength_accuracy_conditional": 0.10542068506817426,
+      "avg_strength_distance": 0.6832844574780058
+    },
+    "10d": {
+      "samples": 3007,
+      "direction_accuracy": 0.23711340206185566,
+      "avg_hierarchical_score": 0.16461589624210177,
+      "strength_accuracy_conditional": 0.09211839042234786,
+      "avg_strength_distance": 0.8078541374474053
+    },
+    "21d": {
+      "samples": 2990,
+      "direction_accuracy": 0.2334448160535117,
+      "avg_hierarchical_score": 0.17274247491638797,
+      "strength_accuracy_conditional": 0.11204013377926421,
+      "avg_strength_distance": 0.7177650429799427
+    }
+  },
+  "TSM": {
+    "1d": {
+      "samples": 4606,
+      "direction_accuracy": 0.22253582283977422,
+      "avg_hierarchical_score": 0.15002171081198437,
+      "strength_accuracy_conditional": 0.07750759878419453,
+      "avg_strength_distance": 0.8458536585365853
+    },
+    "3d": {
+      "samples": 4606,
+      "direction_accuracy": 0.23382544507164568,
+      "avg_hierarchical_score": 0.16033434650455927,
+      "strength_accuracy_conditional": 0.08684324793747286,
+      "avg_strength_distance": 0.7929433611884865
+    },
+    "5d": {
+      "samples": 4606,
+      "direction_accuracy": 0.2359965262700825,
+      "avg_hierarchical_score": 0.15946591402518454,
+      "strength_accuracy_conditional": 0.08293530178028659,
+      "avg_strength_distance": 0.8371665133394665
+    },
+    "10d": {
+      "samples": 4601,
+      "direction_accuracy": 0.2358183003694849,
+      "avg_hierarchical_score": 0.16615953053683982,
+      "strength_accuracy_conditional": 0.09650076070419474,
+      "avg_strength_distance": 0.7548387096774194
+    },
+    "21d": {
+      "samples": 4567,
+      "direction_accuracy": 0.23363258156338954,
+      "avg_hierarchical_score": 0.16159404423034815,
+      "strength_accuracy_conditional": 0.08955550689730676,
+      "avg_strength_distance": 0.8163074039362699
+    }
+  },
+  "ADI": {
+    "1d": {
+      "samples": 3206,
+      "direction_accuracy": 0.21740486587648158,
+      "avg_hierarchical_score": 0.14192139737991266,
+      "strength_accuracy_conditional": 0.06643792888334372,
+      "avg_strength_distance": 0.8794835007173601
+    },
+    "3d": {
+      "samples": 3206,
+      "direction_accuracy": 0.23611977542108548,
+      "avg_hierarchical_score": 0.16141609482220837,
+      "strength_accuracy_conditional": 0.08671241422333126,
+      "avg_strength_distance": 0.7926023778071334
+    },
+    "5d": {
+      "samples": 3206,
+      "direction_accuracy": 0.2364316905801622,
+      "avg_hierarchical_score": 0.1603243917654398,
+      "strength_accuracy_conditional": 0.0842170929507174,
+      "avg_strength_distance": 0.8403693931398417
+    },
+    "10d": {
+      "samples": 3203,
+      "direction_accuracy": 0.24539494224164846,
+      "avg_hierarchical_score": 0.1607867624102404,
+      "strength_accuracy_conditional": 0.07617858257883234,
+      "avg_strength_distance": 0.9236641221374046
+    },
+    "21d": {
+      "samples": 3194,
+      "direction_accuracy": 0.24577332498434565,
+      "avg_hierarchical_score": 0.16296180338134,
+      "strength_accuracy_conditional": 0.08015028177833437,
+      "avg_strength_distance": 0.9184713375796179
+    }
+  },
+  "ERIC": {
+    "1d": {
+      "samples": 2495,
+      "direction_accuracy": 0.20480961923847696,
+      "avg_hierarchical_score": 0.13587174348697395,
+      "strength_accuracy_conditional": 0.06693386773547094,
+      "avg_strength_distance": 0.8571428571428571
+    },
+    "3d": {
+      "samples": 2495,
+      "direction_accuracy": 0.22725450901803607,
+      "avg_hierarchical_score": 0.1557114228456914,
+      "strength_accuracy_conditional": 0.0841683366733467,
+      "avg_strength_distance": 0.8201058201058201
+    },
+    "5d": {
+      "samples": 2495,
+      "direction_accuracy": 0.23406813627254508,
+      "avg_hierarchical_score": 0.1597194388777555,
+      "strength_accuracy_conditional": 0.08537074148296593,
+      "avg_strength_distance": 0.8424657534246576
+    },
+    "10d": {
+      "samples": 2492,
+      "direction_accuracy": 0.23715890850722313,
+      "avg_hierarchical_score": 0.1637239165329053,
+      "strength_accuracy_conditional": 0.09028892455858747,
+      "avg_strength_distance": 0.8291032148900169
+    },
+    "21d": {
+      "samples": 2488,
+      "direction_accuracy": 0.22909967845659163,
+      "avg_hierarchical_score": 0.1537379421221865,
+      "strength_accuracy_conditional": 0.07837620578778134,
+      "avg_strength_distance": 0.9017543859649123
+    }
+  },
+  "DE": {
+    "1d": {
+      "samples": 3446,
+      "direction_accuracy": 0.1938479396401625,
+      "avg_hierarchical_score": 0.12884503772489844,
+      "strength_accuracy_conditional": 0.06384213580963435,
+      "avg_strength_distance": 0.8413173652694611
+    },
+    "3d": {
+      "samples": 3446,
+      "direction_accuracy": 0.21648287869994196,
+      "avg_hierarchical_score": 0.1485780615206036,
+      "strength_accuracy_conditional": 0.08067324434126523,
+      "avg_strength_distance": 0.7788203753351206
+    },
+    "5d": {
+      "samples": 3446,
+      "direction_accuracy": 0.2237376668601277,
+      "avg_hierarchical_score": 0.1495937318630296,
+      "strength_accuracy_conditional": 0.07544979686593152,
+      "avg_strength_distance": 0.8300907911802854
+    },
+    "10d": {
+      "samples": 3446,
+      "direction_accuracy": 0.2350551363900174,
+      "avg_hierarchical_score": 0.16018572257690075,
+      "strength_accuracy_conditional": 0.0853163087637841,
+      "avg_strength_distance": 0.8074074074074075
+    },
+    "21d": {
+      "samples": 3446,
+      "direction_accuracy": 0.23041207196749855,
+      "avg_hierarchical_score": 0.1596053395240859,
+      "strength_accuracy_conditional": 0.08879860708067325,
+      "avg_strength_distance": 0.8161209068010076
+    }
+  },
+  "GOOG": {
+    "1d": {
+      "samples": 9637,
+      "direction_accuracy": 0.1918646881809692,
+      "avg_hierarchical_score": 0.12721801390474213,
+      "strength_accuracy_conditional": 0.0625713396285151,
+      "avg_strength_distance": 0.8436992969172525
+    },
+    "3d": {
+      "samples": 9637,
+      "direction_accuracy": 0.21075023347514787,
+      "avg_hierarchical_score": 0.1468818096918128,
+      "strength_accuracy_conditional": 0.08301338590847775,
+      "avg_strength_distance": 0.7567700640078779
+    },
+    "5d": {
+      "samples": 9637,
+      "direction_accuracy": 0.22226834076994914,
+      "avg_hierarchical_score": 0.1580367334232645,
+      "strength_accuracy_conditional": 0.09380512607657984,
+      "avg_strength_distance": 0.7217553688141923
+    },
+    "10d": {
+      "samples": 9615,
+      "direction_accuracy": 0.231201248049922,
+      "avg_hierarchical_score": 0.16323452938117525,
+      "strength_accuracy_conditional": 0.0952678107124285,
+      "avg_strength_distance": 0.7525865946918578
+    },
+    "21d": {
+      "samples": 9489,
+      "direction_accuracy": 0.23680050584887766,
+      "avg_hierarchical_score": 0.16766782590367793,
+      "strength_accuracy_conditional": 0.09853514595847823,
+      "avg_strength_distance": 0.7645749888740543
+    }
+  },
+  "MMM": {
+    "1d": {
+      "samples": 3732,
+      "direction_accuracy": 0.18220793140407288,
+      "avg_hierarchical_score": 0.12607181136120044,
+      "strength_accuracy_conditional": 0.06993569131832797,
+      "avg_strength_distance": 0.7573529411764706
+    },
+    "3d": {
+      "samples": 3731,
+      "direction_accuracy": 0.20637898686679174,
+      "avg_hierarchical_score": 0.1397748592870544,
+      "strength_accuracy_conditional": 0.07317073170731707,
+      "avg_strength_distance": 0.825974025974026
+    },
+    "5d": {
+      "samples": 3731,
+      "direction_accuracy": 0.21388367729831145,
+      "avg_hierarchical_score": 0.14500134012329136,
+      "strength_accuracy_conditional": 0.07611900294827124,
+      "avg_strength_distance": 0.8095238095238095
+    },
+    "10d": {
+      "samples": 3727,
+      "direction_accuracy": 0.22082103568553796,
+      "avg_hierarchical_score": 0.14623021196672928,
+      "strength_accuracy_conditional": 0.07163938824792059,
+      "avg_strength_distance": 0.9270959902794653
+    },
+    "21d": {
+      "samples": 3709,
+      "direction_accuracy": 0.2289026691830682,
+      "avg_hierarchical_score": 0.14437853868967376,
+      "strength_accuracy_conditional": 0.059854408196279324,
+      "avg_strength_distance": 1.0895170789163722
+    }
+  },
+  "ASML": {
+    "1d": {
+      "samples": 2220,
+      "direction_accuracy": 0.18423423423423424,
+      "avg_hierarchical_score": 0.12567567567567567,
+      "strength_accuracy_conditional": 0.06711711711711711,
+      "avg_strength_distance": 0.823960880195599
+    },
+    "3d": {
+      "samples": 2220,
+      "direction_accuracy": 0.20765765765765765,
+      "avg_hierarchical_score": 0.14594594594594595,
+      "strength_accuracy_conditional": 0.08423423423423423,
+      "avg_strength_distance": 0.7700650759219089
+    },
+    "5d": {
+      "samples": 2220,
+      "direction_accuracy": 0.2072072072072072,
+      "avg_hierarchical_score": 0.14572072072072073,
+      "strength_accuracy_conditional": 0.08423423423423423,
+      "avg_strength_distance": 0.758695652173913
+    },
+    "10d": {
+      "samples": 2211,
+      "direction_accuracy": 0.2130257801899593,
+      "avg_hierarchical_score": 0.14767073722297602,
+      "strength_accuracy_conditional": 0.08231569425599276,
+      "avg_strength_distance": 0.8067940552016986
+    },
+    "21d": {
+      "samples": 2188,
+      "direction_accuracy": 0.19881170018281535,
+      "avg_hierarchical_score": 0.1387111517367459,
+      "strength_accuracy_conditional": 0.07861060329067641,
+      "avg_strength_distance": 0.8367816091954023
+    }
+  },
+  "ORCL": {
+    "1d": {
+      "samples": 7115,
+      "direction_accuracy": 0.17385804638088545,
+      "avg_hierarchical_score": 0.11721714687280393,
+      "strength_accuracy_conditional": 0.06057624736472242,
+      "avg_strength_distance": 0.8189167340339532
+    },
+    "3d": {
+      "samples": 7115,
+      "direction_accuracy": 0.1994378074490513,
+      "avg_hierarchical_score": 0.1371749824314828,
+      "strength_accuracy_conditional": 0.07491215741391427,
+      "avg_strength_distance": 0.7970401691331924
+    },
+    "5d": {
+      "samples": 7115,
+      "direction_accuracy": 0.19479971890372452,
+      "avg_hierarchical_score": 0.13288826423049896,
+      "strength_accuracy_conditional": 0.07097680955727337,
+      "avg_strength_distance": 0.7914862914862915
+    },
+    "10d": {
+      "samples": 7109,
+      "direction_accuracy": 0.19904346602897735,
+      "avg_hierarchical_score": 0.1363764242509495,
+      "strength_accuracy_conditional": 0.07370938247292165,
+      "avg_strength_distance": 0.8318021201413428
+    },
+    "21d": {
+      "samples": 7059,
+      "direction_accuracy": 0.20413656325258536,
+      "avg_hierarchical_score": 0.1333758322708599,
+      "strength_accuracy_conditional": 0.06261510128913444,
+      "avg_strength_distance": 0.945176960444136
+    }
+  },
+  "EMR": {
+    "1d": {
+      "samples": 2278,
+      "direction_accuracy": 0.17208077260755048,
+      "avg_hierarchical_score": 0.11479367866549604,
+      "strength_accuracy_conditional": 0.05750658472344162,
+      "avg_strength_distance": 0.8163265306122449
+    },
+    "3d": {
+      "samples": 2278,
+      "direction_accuracy": 0.19622475856014046,
+      "avg_hierarchical_score": 0.13432835820895522,
+      "strength_accuracy_conditional": 0.07243195785776997,
+      "avg_strength_distance": 0.814317673378076
+    },
+    "5d": {
+      "samples": 2278,
+      "direction_accuracy": 0.21685689201053557,
+      "avg_hierarchical_score": 0.14354697102721686,
+      "strength_accuracy_conditional": 0.07023705004389816,
+      "avg_strength_distance": 0.8987854251012146
+    },
+    "10d": {
+      "samples": 2275,
+      "direction_accuracy": 0.20967032967032967,
+      "avg_hierarchical_score": 0.1386813186813187,
+      "strength_accuracy_conditional": 0.06769230769230769,
+      "avg_strength_distance": 0.9622641509433962
+    },
+    "21d": {
+      "samples": 2266,
+      "direction_accuracy": 0.2144748455428067,
+      "avg_hierarchical_score": 0.13658428949691084,
+      "strength_accuracy_conditional": 0.058693733451015,
+      "avg_strength_distance": 1.0534979423868314
+    }
+  },
+  "ROK": {
+    "1d": {
+      "samples": 1650,
+      "direction_accuracy": 0.1715151515151515,
+      "avg_hierarchical_score": 0.11060606060606061,
+      "strength_accuracy_conditional": 0.0496969696969697,
+      "avg_strength_distance": 0.8833922261484098
+    },
+    "3d": {
+      "samples": 1650,
+      "direction_accuracy": 0.18727272727272729,
+      "avg_hierarchical_score": 0.12636363636363637,
+      "strength_accuracy_conditional": 0.06545454545454546,
+      "avg_strength_distance": 0.7864077669902912
+    },
+    "5d": {
+      "samples": 1650,
+      "direction_accuracy": 0.1806060606060606,
+      "avg_hierarchical_score": 0.12636363636363637,
+      "strength_accuracy_conditional": 0.07212121212121213,
+      "avg_strength_distance": 0.7348993288590604
+    },
+    "10d": {
+      "samples": 1649,
+      "direction_accuracy": 0.1952698605215282,
+      "avg_hierarchical_score": 0.13493026076409945,
+      "strength_accuracy_conditional": 0.07459066100667071,
+      "avg_strength_distance": 0.7546583850931677
+    },
+    "21d": {
+      "samples": 1638,
+      "direction_accuracy": 0.19719169719169719,
+      "avg_hierarchical_score": 0.13705738705738707,
+      "strength_accuracy_conditional": 0.07692307692307693,
+      "avg_strength_distance": 0.7894736842105263
+    }
+  },
+  "TXN": {
+    "1d": {
+      "samples": 4026,
+      "direction_accuracy": 0.16145057128663687,
+      "avg_hierarchical_score": 0.10655737704918032,
+      "strength_accuracy_conditional": 0.051664182811723795,
+      "avg_strength_distance": 0.8507692307692307
+    },
+    "3d": {
+      "samples": 4026,
+      "direction_accuracy": 0.1815697963238947,
+      "avg_hierarchical_score": 0.12332339791356185,
+      "strength_accuracy_conditional": 0.06507699950322901,
+      "avg_strength_distance": 0.8358413132694938
+    },
+    "5d": {
+      "samples": 4026,
+      "direction_accuracy": 0.1860407352210631,
+      "avg_hierarchical_score": 0.12406855439642325,
+      "strength_accuracy_conditional": 0.06209637357178341,
+      "avg_strength_distance": 0.8758344459279038
+    },
+    "10d": {
+      "samples": 4020,
+      "direction_accuracy": 0.19577114427860698,
+      "avg_hierarchical_score": 0.1294776119402985,
+      "strength_accuracy_conditional": 0.06318407960199005,
+      "avg_strength_distance": 0.8894536213468869
+    },
+    "21d": {
+      "samples": 4007,
+      "direction_accuracy": 0.19590716246568504,
+      "avg_hierarchical_score": 0.12864986274020465,
+      "strength_accuracy_conditional": 0.06139256301472423,
+      "avg_strength_distance": 0.9617834394904459
+    }
+  },
+  "TM": {
+    "1d": {
+      "samples": 5422,
+      "direction_accuracy": 0.1534489118406492,
+      "avg_hierarchical_score": 0.1050350424197713,
+      "strength_accuracy_conditional": 0.056621172998893396,
+      "avg_strength_distance": 0.7475961538461539
+    },
+    "3d": {
+      "samples": 5422,
+      "direction_accuracy": 0.15916635927701955,
+      "avg_hierarchical_score": 0.10918480265584656,
+      "strength_accuracy_conditional": 0.05920324603467355,
+      "avg_strength_distance": 0.7740440324449595
+    },
+    "5d": {
+      "samples": 5422,
+      "direction_accuracy": 0.16949465142014017,
+      "avg_hierarchical_score": 0.11351899668019182,
+      "strength_accuracy_conditional": 0.05754334194024345,
+      "avg_strength_distance": 0.8367791077257889
+    },
+    "10d": {
+      "samples": 5417,
+      "direction_accuracy": 0.17297397083256416,
+      "avg_hierarchical_score": 0.11482370315672882,
+      "strength_accuracy_conditional": 0.056673435480893486,
+      "avg_strength_distance": 0.8601921024546425
+    },
+    "21d": {
+      "samples": 5395,
+      "direction_accuracy": 0.17794253938832252,
+      "avg_hierarchical_score": 0.11436515291936979,
+      "strength_accuracy_conditional": 0.050787766450417056,
+      "avg_strength_distance": 0.978125
+    }
+  },
+  "NTAP": {
+    "1d": {
+      "samples": 2978,
+      "direction_accuracy": 0.1605104096709201,
+      "avg_hierarchical_score": 0.10443250503693755,
+      "strength_accuracy_conditional": 0.048354600402955,
+      "avg_strength_distance": 0.9267782426778243
+    },
+    "3d": {
+      "samples": 2978,
+      "direction_accuracy": 0.18233713901947615,
+      "avg_hierarchical_score": 0.12306917394224312,
+      "strength_accuracy_conditional": 0.06380120886501008,
+      "avg_strength_distance": 0.8397790055248618
+    },
+    "5d": {
+      "samples": 2978,
+      "direction_accuracy": 0.18300873069173942,
+      "avg_hierarchical_score": 0.1302887844190732,
+      "strength_accuracy_conditional": 0.07756883814640698,
+      "avg_strength_distance": 0.7412844036697248
+    },
+    "10d": {
+      "samples": 2977,
+      "direction_accuracy": 0.18777292576419213,
+      "avg_hierarchical_score": 0.13453140745717165,
+      "strength_accuracy_conditional": 0.08128988915015116,
+      "avg_strength_distance": 0.7531305903398927
+    },
+    "21d": {
+      "samples": 2965,
+      "direction_accuracy": 0.1851602023608769,
+      "avg_hierarchical_score": 0.13709949409780775,
+      "strength_accuracy_conditional": 0.08903878583473862,
+      "avg_strength_distance": 0.7194899817850637
+    }
+  },
+  "CSCO": {
+    "1d": {
+      "samples": 1061,
+      "direction_accuracy": 0.12629594721960416,
+      "avg_hierarchical_score": 0.08341187558906692,
+      "strength_accuracy_conditional": 0.04052780395852969,
+      "avg_strength_distance": 0.8582089552238806
+    },
+    "3d": {
+      "samples": 1055,
+      "direction_accuracy": 0.13933649289099526,
+      "avg_hierarchical_score": 0.0976303317535545,
+      "strength_accuracy_conditional": 0.055924170616113746,
+      "avg_strength_distance": 0.7142857142857143
+    },
+    "5d": {
+      "samples": 1050,
+      "direction_accuracy": 0.12571428571428572,
+      "avg_hierarchical_score": 0.09,
+      "strength_accuracy_conditional": 0.054285714285714284,
+      "avg_strength_distance": 0.6439393939393939
+    },
+    "10d": {
+      "samples": 1033,
+      "direction_accuracy": 0.15295256534365925,
+      "avg_hierarchical_score": 0.10309777347531461,
+      "strength_accuracy_conditional": 0.05324298160696999,
+      "avg_strength_distance": 0.810126582278481
+    },
+    "21d": {
+      "samples": 1010,
+      "direction_accuracy": 0.15148514851485148,
+      "avg_hierarchical_score": 0.09455445544554456,
+      "strength_accuracy_conditional": 0.03762376237623762,
+      "avg_strength_distance": 1.0196078431372548
+    }
+  },
+  "GOOGL": {
+    "1d": {
+      "samples": 1354,
+      "direction_accuracy": 0.09379615952732644,
+      "avg_hierarchical_score": 0.0620384047267356,
+      "strength_accuracy_conditional": 0.030280649926144758,
+      "avg_strength_distance": 0.8110236220472441
+    },
+    "3d": {
+      "samples": 1350,
+      "direction_accuracy": 0.11703703703703704,
+      "avg_hierarchical_score": 0.07814814814814815,
+      "strength_accuracy_conditional": 0.03925925925925926,
+      "avg_strength_distance": 0.8481012658227848
+    },
+    "5d": {
+      "samples": 1345,
+      "direction_accuracy": 0.10037174721189591,
+      "avg_hierarchical_score": 0.06765799256505577,
+      "strength_accuracy_conditional": 0.03494423791821561,
+      "avg_strength_distance": 0.9333333333333333
+    },
+    "10d": {
+      "samples": 1329,
+      "direction_accuracy": 0.11060948081264109,
+      "avg_hierarchical_score": 0.07185854025583145,
+      "strength_accuracy_conditional": 0.03310759969902182,
+      "avg_strength_distance": 0.9727891156462585
+    },
+    "21d": {
+      "samples": 1273,
+      "direction_accuracy": 0.11233307148468186,
+      "avg_hierarchical_score": 0.06716417910447761,
+      "strength_accuracy_conditional": 0.02199528672427337,
+      "avg_strength_distance": 1.2027972027972027
+    }
+  },
+  "KLAC": {
+    "1d": {
+      "samples": 1128,
+      "direction_accuracy": 0.07535460992907801,
+      "avg_hierarchical_score": 0.044326241134751775,
+      "strength_accuracy_conditional": 0.013297872340425532,
+      "avg_strength_distance": 0.9647058823529412
+    },
+    "3d": {
+      "samples": 1128,
+      "direction_accuracy": 0.07890070921985816,
+      "avg_hierarchical_score": 0.051418439716312055,
+      "strength_accuracy_conditional": 0.023936170212765957,
+      "avg_strength_distance": 0.9887640449438202
+    },
+    "5d": {
+      "samples": 1128,
+      "direction_accuracy": 0.07801418439716312,
+      "avg_hierarchical_score": 0.047872340425531915,
+      "strength_accuracy_conditional": 0.01773049645390071,
+      "avg_strength_distance": 0.9886363636363636
+    },
+    "10d": {
+      "samples": 1123,
+      "direction_accuracy": 0.08103294746215495,
+      "avg_hierarchical_score": 0.05209260908281389,
+      "strength_accuracy_conditional": 0.02315227070347284,
+      "avg_strength_distance": 1.0
+    },
+    "21d": {
+      "samples": 1121,
+      "direction_accuracy": 0.09009812667261374,
+      "avg_hierarchical_score": 0.05575379125780553,
+      "strength_accuracy_conditional": 0.021409455842997322,
+      "avg_strength_distance": 1.1683168316831682
+    }
+  },
+  "AVGO": {
+    "1d": {
+      "samples": 2102,
+      "direction_accuracy": 0.05994291151284491,
+      "avg_hierarchical_score": 0.04210275927687916,
+      "strength_accuracy_conditional": 0.024262607040913417,
+      "avg_strength_distance": 0.7936507936507936
+    },
+    "3d": {
+      "samples": 2102,
+      "direction_accuracy": 0.06898192197906755,
+      "avg_hierarchical_score": 0.045908658420551855,
+      "strength_accuracy_conditional": 0.022835394862036156,
+      "avg_strength_distance": 0.8
+    },
+    "5d": {
+      "samples": 2102,
+      "direction_accuracy": 0.06612749762131304,
+      "avg_hierarchical_score": 0.0444814462416746,
+      "strength_accuracy_conditional": 0.022835394862036156,
+      "avg_strength_distance": 0.8129496402877698
+    },
+    "10d": {
+      "samples": 2096,
+      "direction_accuracy": 0.06583969465648855,
+      "avg_hierarchical_score": 0.0446087786259542,
+      "strength_accuracy_conditional": 0.023377862595419848,
+      "avg_strength_distance": 0.8405797101449275
+    },
+    "21d": {
+      "samples": 2096,
+      "direction_accuracy": 0.0715648854961832,
+      "avg_hierarchical_score": 0.04961832061068702,
+      "strength_accuracy_conditional": 0.02767175572519084,
+      "avg_strength_distance": 0.7733333333333333
+    }
+  },
+  "LOGI": {
+    "1d": {
+      "samples": 683,
+      "direction_accuracy": 0.055636896046852125,
+      "avg_hierarchical_score": 0.03806734992679356,
+      "strength_accuracy_conditional": 0.020497803806734993,
+      "avg_strength_distance": 0.7368421052631579
+    },
+    "3d": {
+      "samples": 683,
+      "direction_accuracy": 0.06881405563689605,
+      "avg_hierarchical_score": 0.04904831625183016,
+      "strength_accuracy_conditional": 0.029282576866764276,
+      "avg_strength_distance": 0.7659574468085106
+    },
+    "5d": {
+      "samples": 683,
+      "direction_accuracy": 0.055636896046852125,
+      "avg_hierarchical_score": 0.040995607613469986,
+      "strength_accuracy_conditional": 0.02635431918008785,
+      "avg_strength_distance": 0.6052631578947368
+    },
+    "10d": {
+      "samples": 682,
+      "direction_accuracy": 0.060117302052785926,
+      "avg_hierarchical_score": 0.045454545454545456,
+      "strength_accuracy_conditional": 0.030791788856304986,
+      "avg_strength_distance": 0.6341463414634146
+    },
+    "21d": {
+      "samples": 677,
+      "direction_accuracy": 0.06794682422451995,
+      "avg_hierarchical_score": 0.04948301329394387,
+      "strength_accuracy_conditional": 0.0310192023633678,
+      "avg_strength_distance": 0.782608695652174
+    }
+  },
+  "LRCX": {
+    "1d": {
+      "samples": 657,
+      "direction_accuracy": 0.0593607305936073,
+      "avg_hierarchical_score": 0.03729071537290715,
+      "strength_accuracy_conditional": 0.015220700152207,
+      "avg_strength_distance": 0.9230769230769231
+    },
+    "3d": {
+      "samples": 657,
+      "direction_accuracy": 0.0715372907153729,
+      "avg_hierarchical_score": 0.0487062404870624,
+      "strength_accuracy_conditional": 0.0258751902587519,
+      "avg_strength_distance": 0.8936170212765957
+    },
+    "5d": {
+      "samples": 657,
+      "direction_accuracy": 0.0700152207001522,
+      "avg_hierarchical_score": 0.04794520547945205,
+      "strength_accuracy_conditional": 0.0258751902587519,
+      "avg_strength_distance": 0.7391304347826086
+    },
+    "10d": {
+      "samples": 653,
+      "direction_accuracy": 0.06891271056661562,
+      "avg_hierarchical_score": 0.04977029096477795,
+      "strength_accuracy_conditional": 0.030627871362940276,
+      "avg_strength_distance": 0.6666666666666666
+    },
+    "21d": {
+      "samples": 650,
+      "direction_accuracy": 0.06769230769230769,
+      "avg_hierarchical_score": 0.05076923076923077,
+      "strength_accuracy_conditional": 0.033846153846153845,
+      "avg_strength_distance": 0.6136363636363636
+    }
+  },
+  "GD": {
+    "1d": {
+      "samples": 1233,
+      "direction_accuracy": 0.05190592051905921,
+      "avg_hierarchical_score": 0.036090835360908353,
+      "strength_accuracy_conditional": 0.0202757502027575,
+      "avg_strength_distance": 0.703125
+    },
+    "3d": {
+      "samples": 1233,
+      "direction_accuracy": 0.06082725060827251,
+      "avg_hierarchical_score": 0.043795620437956206,
+      "strength_accuracy_conditional": 0.0267639902676399,
+      "avg_strength_distance": 0.6133333333333333
+    },
+    "5d": {
+      "samples": 1233,
+      "direction_accuracy": 0.06326034063260341,
+      "avg_hierarchical_score": 0.045823195458231956,
+      "strength_accuracy_conditional": 0.028386050283860504,
+      "avg_strength_distance": 0.6153846153846154
+    },
+    "10d": {
+      "samples": 1230,
+      "direction_accuracy": 0.06747967479674796,
+      "avg_hierarchical_score": 0.042682926829268296,
+      "strength_accuracy_conditional": 0.01788617886178862,
+      "avg_strength_distance": 0.9156626506024096
+    },
+    "21d": {
+      "samples": 1223,
+      "direction_accuracy": 0.06704824202780049,
+      "avg_hierarchical_score": 0.04333605887162715,
+      "strength_accuracy_conditional": 0.019623875715453803,
+      "avg_strength_distance": 0.975609756097561
+    }
+  },
+  "HMC": {
+    "1d": {
+      "samples": 1419,
+      "direction_accuracy": 0.046511627906976744,
+      "avg_hierarchical_score": 0.0306553911205074,
+      "strength_accuracy_conditional": 0.014799154334038054,
+      "avg_strength_distance": 0.7878787878787878
+    },
+    "3d": {
+      "samples": 1419,
+      "direction_accuracy": 0.0507399577167019,
+      "avg_hierarchical_score": 0.03699788583509514,
+      "strength_accuracy_conditional": 0.023255813953488372,
+      "avg_strength_distance": 0.7083333333333334
+    },
+    "5d": {
+      "samples": 1419,
+      "direction_accuracy": 0.05637773079633545,
+      "avg_hierarchical_score": 0.03770260747004933,
+      "strength_accuracy_conditional": 0.019027484143763214,
+      "avg_strength_distance": 0.9375
+    },
+    "10d": {
+      "samples": 1419,
+      "direction_accuracy": 0.06694855532064835,
+      "avg_hierarchical_score": 0.045454545454545456,
+      "strength_accuracy_conditional": 0.023960535588442564,
+      "avg_strength_distance": 0.9368421052631579
+    },
+    "21d": {
+      "samples": 1417,
+      "direction_accuracy": 0.06563161609033169,
+      "avg_hierarchical_score": 0.04022582921665491,
+      "strength_accuracy_conditional": 0.014820042342978124,
+      "avg_strength_distance": 1.1290322580645162
+    }
+  },
+  "NXPI": {
+    "1d": {
+      "samples": 1072,
+      "direction_accuracy": 0.04291044776119403,
+      "avg_hierarchical_score": 0.03031716417910448,
+      "strength_accuracy_conditional": 0.017723880597014924,
+      "avg_strength_distance": 0.9347826086956522
+    },
+    "3d": {
+      "samples": 1072,
+      "direction_accuracy": 0.05783582089552239,
+      "avg_hierarchical_score": 0.03824626865671642,
+      "strength_accuracy_conditional": 0.018656716417910446,
+      "avg_strength_distance": 1.032258064516129
+    },
+    "5d": {
+      "samples": 1072,
+      "direction_accuracy": 0.054104477611940295,
+      "avg_hierarchical_score": 0.03871268656716418,
+      "strength_accuracy_conditional": 0.02332089552238806,
+      "avg_strength_distance": 0.7586206896551724
+    },
+    "10d": {
+      "samples": 1070,
+      "direction_accuracy": 0.05514018691588785,
+      "avg_hierarchical_score": 0.041121495327102804,
+      "strength_accuracy_conditional": 0.027102803738317756,
+      "avg_strength_distance": 0.6610169491525424
+    },
+    "21d": {
+      "samples": 1061,
+      "direction_accuracy": 0.06220546654099906,
+      "avg_hierarchical_score": 0.04288407163053723,
+      "strength_accuracy_conditional": 0.0235626767200754,
+      "avg_strength_distance": 0.8787878787878788
+    }
+  },
+  "JBL": {
+    "1d": {
+      "samples": 1189,
+      "direction_accuracy": 0.045416316232127836,
+      "avg_hierarchical_score": 0.030277544154751892,
+      "strength_accuracy_conditional": 0.015138772077375946,
+      "avg_strength_distance": 0.9074074074074074
+    },
+    "3d": {
+      "samples": 1189,
+      "direction_accuracy": 0.045416316232127836,
+      "avg_hierarchical_score": 0.030277544154751892,
+      "strength_accuracy_conditional": 0.015138772077375946,
+      "avg_strength_distance": 0.7407407407407407
+    },
+    "5d": {
+      "samples": 1189,
+      "direction_accuracy": 0.05298570227081581,
+      "avg_hierarchical_score": 0.037426408746846086,
+      "strength_accuracy_conditional": 0.021867115222876366,
+      "avg_strength_distance": 0.6666666666666666
+    },
+    "10d": {
+      "samples": 1189,
+      "direction_accuracy": 0.056349873843566024,
+      "avg_hierarchical_score": 0.04205214465937763,
+      "strength_accuracy_conditional": 0.027754415475189236,
+      "avg_strength_distance": 0.6716417910447762
+    },
+    "21d": {
+      "samples": 1189,
+      "direction_accuracy": 0.05887300252312868,
+      "avg_hierarchical_score": 0.04121110176619008,
+      "strength_accuracy_conditional": 0.023549201009251473,
+      "avg_strength_distance": 0.7714285714285715
+    }
+  }
+}

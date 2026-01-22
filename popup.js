@@ -1,13 +1,13 @@
-const GEMINI_API_KEY = "";
-const ALPHA_KEY = "";
+const GEMINI_API_KEY = "your-gemini-api-key";
+const ALPHA_KEY = "your-alpha-vantage-api-key";
 
 
 /***** Load ticker reliability data *****/
-let tickerReliability = {};
+let tickerReliabilityByHorizon = {};
 
-fetch(chrome.runtime.getURL("extension_data/ticker_reliability.json"))
+fetch(chrome.runtime.getURL("extension_data/ticker_reliability_by_horizon.json"))
   .then(res => res.json())
-  .then(data => tickerReliability = data)
+  .then(data => tickerReliabilityByHorizon = data)
   .catch(err => console.error("Failed to load reliability data", err));
 
 /***** Bookmarks *****/
@@ -178,8 +178,12 @@ async function fetchPriceAtDate(ticker, articleDate) {
 }
 
 /***** Reliability Badge *****/
-function getReliabilityInfo(ticker) {
-  const info = tickerReliability[ticker];
+function getReliabilityInfo(ticker, horizon) {
+  const tickerData = tickerReliabilityByHorizon[ticker];
+  if (!tickerData) {
+    return { label: "Low", cls: "low", text: "Insufficient history" };
+  }
+  const info = tickerData[horizon];
   if (!info || info.samples < 10) {
     return { label: "Low", cls: "low", text: "Insufficient history" };
   }
@@ -194,7 +198,7 @@ function getReliabilityInfo(ticker) {
 
 /***** Prompt Builders *****/
 // When user specifies a ticker
-function buildSingleTickerPrompt(ticker, date, articleText) {
+function buildSingleTickerPrompt(ticker, date, articleText, horizon) {
   return `
 You MUST output ONLY valid JSON.
 
@@ -207,7 +211,7 @@ You MUST output ONLY valid JSON.
 }
 
 Rules:
-- Predict ONLY ${ticker}
+- Predict ONLY ${ticker} over a ${horizon} horizon
 - Strength based on expected_move_percent
   - if direction = NO IMPACT or expected_move_percent <= 0.3%, strength = none
   - if 0.3% < expected_move_percent <= 1%, strength = weak
@@ -283,6 +287,7 @@ async function analyzeStock(stock) {
   const resultDiv = document.getElementById("result");
   const priceDiv = document.getElementById("price");
   const relDiv = document.getElementById("reliability");
+  const horizon = document.getElementById("horizon").value;
 
   resultDiv.innerText = "Analyzing...";
   priceDiv.innerText = "";
@@ -329,7 +334,7 @@ async function analyzeStock(stock) {
     const { articleText, articleDate } = result;
 
     const prompt = stock
-      ? buildSingleTickerPrompt(stock, articleDate, articleText)
+      ? buildSingleTickerPrompt(stock, articleDate, articleText, horizon)
       : buildDiscoveryPrompt(articleDate, articleText);
 
     const response = await fetch(
@@ -344,6 +349,8 @@ async function analyzeStock(stock) {
     let text = (await response.json())
       ?.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
+    console.log("Raw Gemini API response text:", text);
+
     text = text.replace(/```json|```/g, "").trim();
     const preds = stock ? [JSON.parse(text)] : JSON.parse(text);
 
@@ -353,7 +360,7 @@ async function analyzeStock(stock) {
     for (const p of preds) {
       const ticker = p.ticker;
       const cleanTicker = normalizeTicker(ticker);
-      const rel = cleanTicker ? getReliabilityInfo(cleanTicker) : null;
+      const rel = cleanTicker ? getReliabilityInfo(cleanTicker, horizon) : null;
       if (!cleanTicker) {
         priceDiv.innerHTML += `
           ${ticker}: Price unavailable (non-US ticker)<br>
