@@ -1,7 +1,6 @@
 const GEMINI_API_KEY = "your-gemini-api-key";
 const ALPHA_KEY = "your-alpha-vantage-api-key";
 
-
 /***** Load ticker reliability data *****/
 let tickerReliabilityByHorizon = {};
 
@@ -227,27 +226,15 @@ Article:
 // When user does not specify a ticker
 function buildDiscoveryPrompt(date, articleText) {
   return `
-You MUST output ONLY valid JSON ARRAY.
+You MUST output ONLY valid JSON ARRAY of strings.
 
-Each element:
-{
-  "ticker": "TICKER",
-  "direction": "UP" | "DOWN" | "NO IMPACT",
-  "strength": "weak" | "moderate" | "strong" | "none",
-  "expected_move_percent": number,
-  "explanation": "short explanation"
-}
+Each string is a ticker symbol that will be affected by this article.
 
 Rules:
 - Include ONLY affected tickers
 - DO NOT include more than 5 tickers, choose the most affected ones
 - DO NOT repeat tickers
-- Strength based on expected_move_percent
-  - if direction = NO IMPACT or expected_move_percent <= 0.3%, strength = none
-  - if 0.3% < expected_move_percent <= 1%, strength = weak
-  - if 1% < expected_move_percent <= 3%, strength = moderate
-  - if expected_move_percent > 3%, strength = strong
-- Sort by expected_move_percent descending
+- Output format: ["TICKER1", "TICKER2", ...]
 - No hindsight
 
 Article:
@@ -333,26 +320,58 @@ async function analyzeStock(stock) {
 
     const { articleText, articleDate } = result;
 
-    const prompt = stock
-      ? buildSingleTickerPrompt(stock, articleDate, articleText, horizon)
-      : buildDiscoveryPrompt(articleDate, articleText);
+    let preds = [];
+    if (stock) {
+      const prompt = buildSingleTickerPrompt(stock, articleDate, articleText, horizon);
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }] })
+        }
+      );
+      let text = (await response.json())
+        ?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      console.log("Raw Gemini API response text:", text);
+      text = text.replace(/```json|```/g, "").trim();
+      preds = [JSON.parse(text)];
+    } else {
+      // First, get the list of affected tickers
+      const listPrompt = buildDiscoveryPrompt(articleDate, articleText);
+      const listResponse = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: listPrompt }] }] })
+        }
+      );
+      let listText = (await listResponse.json())
+        ?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      console.log("Raw Gemini list response text:", listText);
+      listText = listText.replace(/```json|```/g, "").trim();
+      const tickers = JSON.parse(listText);
 
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }] })
+      // Now, for each ticker, get the prediction
+      for (const ticker of tickers) {
+        const prompt = buildSingleTickerPrompt(ticker, articleDate, articleText, horizon);
+        const response = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }] })
+          }
+        );
+        let text = (await response.json())
+          ?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+        console.log(`Raw Gemini response for ${ticker}:`, text);
+        text = text.replace(/```json|```/g, "").trim();
+        const pred = JSON.parse(text);
+        preds.push(pred);
       }
-    );
-
-    let text = (await response.json())
-      ?.candidates?.[0]?.content?.parts?.[0]?.text || "";
-
-    console.log("Raw Gemini API response text:", text);
-
-    text = text.replace(/```json|```/g, "").trim();
-    const preds = stock ? [JSON.parse(text)] : JSON.parse(text);
+    }
 
     resultDiv.innerHTML = ""
     priceDiv.innerHTML = "";
