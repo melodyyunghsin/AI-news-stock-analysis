@@ -110,7 +110,7 @@ First call is slow (~10–30s) because Ollama loads the model into memory; later
 ### v0.5.0 — current
 - **Pipeline:** ported the two-step factor-extraction + horizon-specific prediction pipeline from `Evaluation_v2/qwen_predict.py`.
 - **Output schema:** `direction` + `confidence` (0–1) replace `strength` + `expected_move_percent`. Relevance score and causal factors are now shown on each prediction card.
-- **LLM selector:** added in-popup Settings with a Gemini ⇄ Ollama toggle, per-installation API key, and configurable model name. Gemini default updated to `gemini-2.5-flash`.
+- **LLM selector:** added in-popup Settings with a Gemini ⇄ Ollama toggle, per-installation API key, and configurable model name. Gemini default updated to `gemini-3.1-flash-lite-preview`.
 - **Price summary:** raw price dump replaced with SMAs / trend / volatility / range indicators (LLMs reason better over pre-computed features than long number lists).
 
 ### v0.4.0
