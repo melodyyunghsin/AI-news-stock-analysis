@@ -1,101 +1,462 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Stock Impact Analyzer</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      width: 340px; 
-      padding: 8px; 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      width: 380px;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-size: 13px;
     }
 
-    h3, h4 {
-      margin-bottom: 6px;
+    /* ── Header ── */
+    .header {
+      background: #2563eb;
+      color: white;
+      padding: 14px 16px 12px;
+    }
+    .header h3 {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .header p {
+      font-size: 11px;
+      opacity: 0.7;
+      margin-top: 2px;
     }
 
-    button, input { 
-      width: 100%; 
-      margin-top: 6px; 
-      padding: 6px;
+    /* ── Cards ── */
+    .card {
+      background: white;
+      margin: 10px 10px 0;
+      border-radius: 10px;
+      padding: 12px 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
     }
 
-    #result { 
-      margin-top: 10px; 
-      white-space: pre-wrap; 
-    }
-
-    #price, #reliability {
-      margin-top: 6px;
-      font-size: 14px;
-    }
-
-    .bookmark-button {
-      background: #eef;
-      border: 1px solid #99f;
-      padding: 4px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .remove-bookmark-button {
-      width: 30%;
-      background: #ffdddd;
-      border: 1px solid #ff9999;
-      padding: 4px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .badge {
-      display: inline-block;
-      margin-top: 4px;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 12px;
-    }
-
-    .high { background: #ccffcc; }
-    .medium { background: #fff2cc; }
-    .low { background: #ffdddd; }
-
-    hr {
-      margin-top: 10px;
+    .card-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
       margin-bottom: 10px;
     }
+
+    /* ── Inputs ── */
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 4px;
+      margin-top: 10px;
+    }
+    label:first-of-type { margin-top: 0; }
+
+    input[type="text"], input[type="password"], select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font-size: 13px;
+      color: #1e293b;
+      background: #f8fafc;
+      outline: none;
+      transition: border-color 0.15s, background 0.15s;
+      appearance: none;
+    }
+    input[type="text"]:focus, input[type="password"]:focus, select:focus {
+      border-color: #2563eb;
+      background: white;
+    }
+
+    /* ── Settings card ── */
+    .settings-header {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .settings-header .card-title {
+      flex: 1;
+      margin-bottom: 0;
+    }
+    .current-model {
+      font-size: 11px;
+      font-weight: 600;
+      color: #2563eb;
+      background: #dbeafe;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-right: 8px;
+    }
+    .settings-arrow {
+      font-size: 12px;
+      color: #94a3b8;
+      transition: transform 0.2s;
+    }
+    .settings-header.expanded .settings-arrow {
+      transform: rotate(180deg);
+    }
+    .settings-body {
+      display: none;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #f1f5f9;
+    }
+    .settings-body.expanded {
+      display: block;
+    }
+    .settings-hint {
+      font-size: 10px;
+      color: #94a3b8;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+    .settings-hint a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    #saveSettings {
+      margin-top: 12px;
+      width: 100%;
+      background: #2563eb;
+      color: white;
+    }
+    #saveSettings:hover { background: #1d4ed8; }
+    .settings-status {
+      margin-top: 8px;
+      font-size: 11px;
+      text-align: center;
+      min-height: 14px;
+    }
+    .settings-status.ok    { color: #16a34a; }
+    .settings-status.error { color: #dc2626; }
+
+    /* ── Buttons ── */
+    .btn-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    button {
+      flex: 1;
+      padding: 8px 10px;
+      border: none;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, opacity 0.15s;
+    }
+    #analyze {
+      background: #2563eb;
+      color: white;
+    }
+    #analyze:hover:not(:disabled) { background: #1d4ed8; }
+    #analyze:disabled { opacity: 0.5; cursor: not-allowed; }
+    #bookmarkStock {
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+      flex: 0 0 auto;
+      padding: 8px 14px;
+    }
+    #bookmarkStock:hover { background: #e2e8f0; }
+
+    /* ── Bookmarks ── */
+    .bookmark-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      min-height: 20px;
+    }
+    .bookmark-list:empty::after {
+      content: "No bookmarks yet";
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    .bookmark-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 20px;
+      padding: 3px 8px 3px 11px;
+    }
+    .bookmark-button {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 12px;
+      font-weight: 700;
+      color: #1d4ed8;
+      cursor: pointer;
+      flex: none;
+      width: auto;
+    }
+    .remove-bookmark-button {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1;
+      color: #93c5fd;
+      cursor: pointer;
+      flex: none;
+      width: auto;
+    }
+    .remove-bookmark-button:hover { color: #dc2626; }
+
+    /* ── Status ── */
+    #status {
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      padding: 10px 16px 0;
+      min-height: 0;
+    }
+
+    /* ── Prediction Cards ── */
+    #predictions { padding-bottom: 10px; }
+
+    .pred-card {
+      background: white;
+      margin: 10px 10px 0;
+      border-radius: 10px;
+      padding: 13px 14px 11px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      border-left: 4px solid #e2e8f0;
+    }
+    .pred-card.up   { border-left-color: #16a34a; }
+    .pred-card.down { border-left-color: #dc2626; }
+
+    .pred-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .pred-ticker {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: 0.3px;
+    }
+    .direction-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 11px;
+      border-radius: 20px;
+    }
+    .direction-badge.up   { background: #dcfce7; color: #16a34a; }
+    .direction-badge.down { background: #fee2e2; color: #dc2626; }
+
+    .pred-price {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .pred-price small { color: #94a3b8; }
+
+    .pred-meta {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .pred-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .meta-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meta-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .pred-explanation {
+      font-size: 12px;
+      color: #475569;
+      line-height: 1.55;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 9px;
+    }
+
+    .pred-reasoning {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #64748b;
+      line-height: 1.5;
+      font-style: italic;
+    }
+    .pred-reasoning .reasoning-label {
+      color: #94a3b8;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 0.4px;
+      margin-right: 4px;
+    }
+
+    .pred-factors {
+      margin-top: 9px;
+      font-size: 11px;
+      color: #475569;
+    }
+    .pred-factors summary {
+      cursor: pointer;
+      color: #2563eb;
+      font-weight: 600;
+      padding: 2px 0;
+      list-style: none;
+    }
+    .pred-factors summary::-webkit-details-marker { display: none; }
+    .pred-factors summary::before {
+      content: "▸ ";
+      color: #94a3b8;
+    }
+    .pred-factors[open] summary::before {
+      content: "▾ ";
+    }
+    .pred-factors ul {
+      margin: 6px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .factor-item {
+      padding: 5px 8px;
+      margin-top: 4px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border-left: 3px solid #cbd5e1;
+    }
+    .factor-item.factor-pos { border-left-color: #16a34a; }
+    .factor-item.factor-neg { border-left-color: #dc2626; }
+    .factor-text { display: block; color: #334155; line-height: 1.5; }
+    .factor-meta {
+      display: block;
+      margin-top: 2px;
+      color: #94a3b8;
+      font-size: 10px;
+      letter-spacing: 0.2px;
+    }
+
+    .pred-rel {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .pred-rel span:last-child { font-size: 11px; color: #64748b; }
+
+    .high   { background: #dcfce7; color: #166534; }
+    .medium { background: #fef9c3; color: #854d0e; }
+    .low    { background: #fee2e2; color: #991b1b; }
+    .none   { background: #f1f5f9; color: #64748b; }
   </style>
 </head>
 
 <body>
 
-  <h3>Stock Impact Analyzer</h3>
+  <div class="header">
+    <h3>Stock Impact Analyzer</h3>
+    <p>AI-powered news-to-price prediction</p>
+  </div>
 
-  <label>Enter Stock (Ticker):</label>
-  <input type="text" id="stockInput" placeholder="e.g., GM">
+  <div class="card">
+    <div class="settings-header" id="settingsToggle">
+      <span class="card-title">Model Settings</span>
+      <span class="current-model" id="currentModelLabel">Gemini</span>
+      <span class="settings-arrow">▾</span>
+    </div>
 
-  <label>Prediction Horizon:</label>
-  <select id="horizon">
-    <option value="1d">1d</option>
-    <option value="3d">3d</option>
-    <option value="5d">5d</option>
-    <option value="10d">10d</option>
-    <option value="21d">21d</option>
-  </select>
+    <div class="settings-body" id="settingsBody">
+      <label>LLM Provider</label>
+      <select id="llmProvider">
+        <option value="gemini">Gemini (cloud)</option>
+        <option value="qwen">Ollama (local — Qwen, Llama, Mistral, etc.)</option>
+      </select>
 
-  <button id="analyze">Analyze Article</button>
-  <button id="bookmarkStock">Bookmark This Stock</button>
+      <div id="geminiFields">
+        <label>Gemini API Key</label>
+        <input type="password" id="geminiApiKey" placeholder="Paste your API key">
+        <div class="settings-hint">Get one at <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a>. Leave blank to use the built-in default.</div>
 
-  <h4>Your Bookmarked Stocks</h4>
-  <div id="bookmarks"></div>
+        <label>Gemini Model</label>
+        <input type="text" id="geminiModel" placeholder="gemini-3.1-flash-lite-preview">
+        <div class="settings-hint">Note: gemini-2.0-flash is being deprecated.</div>
+      </div>
 
-  <hr>
+      <div id="qwenFields" style="display:none;">
+        <label>Ollama URL</label>
+        <input type="text" id="ollamaUrl" placeholder="http://localhost:11434/v1">
 
-  <h4>Price</h4>
-  <div id="price"></div>
+        <label>Ollama Model</label>
+        <input type="text" id="qwenModel" placeholder="qwen2.5:7b">
+        <div class="settings-hint">Any model you've pulled in Ollama works (e.g. <code>qwen2.5:7b</code>, <code>llama3.2</code>, <code>mistral</code>, <code>gemma2</code>). Start Ollama with <code>OLLAMA_ORIGINS=*</code> if requests are blocked.</div>
+      </div>
 
-  <h4>Analysis</h4>
-  <div id="result"></div>
+      <button id="saveSettings">Save Settings</button>
+      <div class="settings-status" id="settingsStatus"></div>
+    </div>
+  </div>
 
-  <div id="reliability"></div>
+  <div class="card">
+    <label>Stock Ticker</label>
+    <input type="text" id="stockInput" placeholder="e.g. AAPL - leave blank to auto-detect">
+
+    <label>Prediction Horizon</label>
+    <select id="horizon">
+      <option value="1d">1 day</option>
+      <option value="3d">3 days</option>
+      <option value="5d">5 days</option>
+      <option value="10d">10 days</option>
+      <option value="21d">21 days</option>
+    </select>
+
+    <div class="btn-row">
+      <button id="analyze">Analyze Article</button>
+      <button id="bookmarkStock">Bookmark 🔖</button>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom: 0;">
+    <div class="card-title">Bookmarked Stocks</div>
+    <div class="bookmark-list" id="bookmarks"></div>
+  </div>
+
+  <div id="status"></div>
+  <div id="predictions"></div>
+
+  <!-- kept for popup.js compatibility -->
+  <div id="price" style="display:none"></div>
+  <div id="result" style="display:none"></div>
+  <div id="reliability" style="display:none"></div>
 
   <script src="popup.js"></script>
 </body>
