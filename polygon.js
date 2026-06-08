@@ -1,4 +1,10 @@
-const POLYGON_KEY = ""; // Replace with your key from polygon.io
+import { llmSettings } from "./llm-settings.js";
+
+// Key is user-supplied via the Settings panel (persisted in chrome.storage.local,
+// off sync). Read at call time so it reflects the latest saved value.
+function polygonKey() {
+  return (llmSettings.polygon_api_key || "").trim();
+}
 
 const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
 const memCache = {};
@@ -59,13 +65,16 @@ async function fetchRawSeries(ticker, articleDate) {
     chrome.storage.local.remove([`poly_${ticker}`]);
   }
 
+  const apiKey = polygonKey();
+  if (!apiKey) return { error: "MISSING_KEY" };
+
   const wait = Math.max(0, 2000 - (Date.now() - lastPolyCall));
   if (wait > 0) await sleep(wait);
   lastPolyCall = Date.now();
 
   const fromDate = subtractDays(articleDate, 90);
   const toDate = articleDate;
-  const url = `https://api.polygon.io/v2/aggs/ticker/${ticker}/range/1/day/${fromDate}/${toDate}?adjusted=true&sort=desc&limit=60&apiKey=${POLYGON_KEY}`;
+  const url = `https://api.polygon.io/v2/aggs/ticker/${ticker}/range/1/day/${fromDate}/${toDate}?adjusted=true&sort=desc&limit=60&apiKey=${apiKey}`;
 
   try {
     const resp = await fetch(url);
@@ -142,12 +151,16 @@ export async function getCompanyContext(ticker) {
   }
 
   let context = `${ticker} — company details unavailable.`;
+
+  const apiKey = polygonKey();
+  if (!apiKey) return context; // no key yet — skip lookup, don't cache so it retries once set
+
   try {
     const wait = Math.max(0, 2000 - (Date.now() - lastPolyCall));
     if (wait > 0) await sleep(wait);
     lastPolyCall = Date.now();
 
-    const resp = await fetch(`https://api.polygon.io/v3/reference/tickers/${ticker}?apiKey=${POLYGON_KEY}`);
+    const resp = await fetch(`https://api.polygon.io/v3/reference/tickers/${ticker}?apiKey=${apiKey}`);
     const data = await resp.json();
     if (data.status === "OK" && data.results) {
       const r = data.results;

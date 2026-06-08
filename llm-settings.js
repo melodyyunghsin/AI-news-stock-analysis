@@ -4,9 +4,10 @@ export const FALLBACK_GEMINI_API_KEY = "";
 export const LLM_DEFAULTS = {
   llm_provider:    "gemini",                       // "gemini" | "qwen"
   gemini_api_key:  "",                              // user-supplied; falls back to built-in
-  gemini_model:    "gemini-2.5-flash",              // 2.0-flash is being deprecated
+  gemini_model:    "gemini-2.5-flash-lite",         // model used for the evaluation
   ollama_url:      "http://localhost:11434/v1",
-  qwen_model:      "qwen2.5:7b"
+  qwen_model:      "qwen2.5:7b",
+  polygon_api_key: ""                               // user-supplied; for price/company data
 };
 
 export let llmSettings = { ...LLM_DEFAULTS };
@@ -37,6 +38,7 @@ export async function initSettingsUI() {
   const geminiModel = document.getElementById("geminiModel");
   const ollamaUrl   = document.getElementById("ollamaUrl");
   const qwenModel   = document.getElementById("qwenModel");
+  const polygonKey  = document.getElementById("polygonApiKey");
   const geminiBox   = document.getElementById("geminiFields");
   const qwenBox     = document.getElementById("qwenFields");
   const saveBtn     = document.getElementById("saveSettings");
@@ -48,6 +50,7 @@ export async function initSettingsUI() {
   geminiModel.value = llmSettings.gemini_model;
   ollamaUrl.value   = llmSettings.ollama_url;
   qwenModel.value   = llmSettings.qwen_model;
+  polygonKey.value  = llmSettings.polygon_api_key;
   refreshProviderVisibility();
   refreshModelLabel();
 
@@ -64,7 +67,8 @@ export async function initSettingsUI() {
       gemini_api_key: apiKeyInput.value.trim(),
       gemini_model:   geminiModel.value.trim() || LLM_DEFAULTS.gemini_model,
       ollama_url:     ollamaUrl.value.trim()   || LLM_DEFAULTS.ollama_url,
-      qwen_model:     qwenModel.value.trim()   || LLM_DEFAULTS.qwen_model
+      qwen_model:     qwenModel.value.trim()   || LLM_DEFAULTS.qwen_model,
+      polygon_api_key: polygonKey.value.trim()
     });
     refreshModelLabel();
     statusDiv.textContent = "Saved.";

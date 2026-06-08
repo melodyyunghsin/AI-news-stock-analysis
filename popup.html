@@ -396,11 +396,16 @@
     </div>
 
     <div class="settings-body" id="settingsBody">
-      <label>LLM Provider</label>
-      <select id="llmProvider">
-        <option value="gemini">Gemini (cloud)</option>
-        <option value="qwen">Ollama (local — Qwen, Llama, Mistral, etc.)</option>
-      </select>
+      <!-- Provider selector hidden: extension ships Gemini-only. The Ollama
+           fields below stay in the DOM (settings JS references them) but are
+           hidden; flip these `hidden` attributes to re-enable local models. -->
+      <div id="providerRow" hidden>
+        <label>LLM Provider</label>
+        <select id="llmProvider">
+          <option value="gemini">Gemini (cloud)</option>
+          <option value="qwen">Ollama (local — Qwen, Llama, Mistral, etc.)</option>
+        </select>
+      </div>
 
       <div id="geminiFields">
         <label>Gemini API Key</label>
@@ -408,11 +413,11 @@
         <div class="settings-hint">Get one at <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a>. Leave blank to use the built-in default.</div>
 
         <label>Gemini Model</label>
-        <input type="text" id="geminiModel" placeholder="gemini-3.1-flash-lite-preview">
-        <div class="settings-hint">Note: gemini-2.0-flash is being deprecated.</div>
+        <input type="text" id="geminiModel" placeholder="gemini-2.5-flash-lite">
+        <div class="settings-hint">Default is <code>gemini-2.5-flash-lite</code> (the model used for the evaluation).</div>
       </div>
 
-      <div id="qwenFields" style="display:none;">
+      <div id="qwenFields" hidden>
         <label>Ollama URL</label>
         <input type="text" id="ollamaUrl" placeholder="http://localhost:11434/v1">
 
@@ -420,6 +425,10 @@
         <input type="text" id="qwenModel" placeholder="qwen2.5:7b">
         <div class="settings-hint">Any model you've pulled in Ollama works (e.g. <code>qwen2.5:7b</code>, <code>llama3.2</code>, <code>mistral</code>, <code>gemma2</code>). Start Ollama with <code>OLLAMA_ORIGINS=*</code> if requests are blocked.</div>
       </div>
+
+      <label>Polygon.io API Key</label>
+      <input type="password" id="polygonApiKey" placeholder="Paste your Polygon.io key">
+      <div class="settings-hint">Used for price &amp; company data. Get a free key at <a href="https://polygon.io/dashboard/api-keys" target="_blank">polygon.io</a>. Free tier allows 5 requests/min.</div>
 
       <button id="saveSettings">Save Settings</button>
       <div class="settings-status" id="settingsStatus"></div>

@@ -125,6 +125,7 @@ async function renderPredictionCard(p, articleDate, horizon, container) {
     } else {
       const errorMap = {
         OUT_OF_RANGE:       "Outside date range",
+        MISSING_KEY:        "Add a Polygon API key in Settings",
         API_LIMIT:          "API rate limit — wait 1 min and retry",
         UNSUPPORTED_TICKER: "Unsupported ticker",
         NO_SERIES:          "No price data",
@@ -149,7 +150,7 @@ async function renderPredictionCard(p, articleDate, horizon, container) {
     : "—";
 
   const relHTML = rel
-    ? `<div class="pred-rel"><span class="badge ${rel.cls}">${rel.label}${rel.cls !== "none" ? " reliability" : ""}</span><span>${rel.text}</span></div>`
+    ? `<div class="pred-rel"><span class="badge ${rel.cls}">${escapeHtml(rel.label)}</span><span>${escapeHtml(rel.text)}</span></div>`
     : "";
 
   const reasoningHTML = p.relevance_reasoning
