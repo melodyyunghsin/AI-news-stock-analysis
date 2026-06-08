@@ -92,7 +92,7 @@ curl -i -H "Origin: chrome-extension://test" http://localhost:11434/api/tags
 ### 5. Configure the extension
 1. Open the extension popup
 2. Expand **Model Settings**
-3. **LLM Provider** → `Ollama (local — Qwen, Llama, Mistral, etc.)`
+3. **LLM Provider** → `Ollama (local — Qwen, Llama, Mistral, etc.)` (this selector is hidden by default — unhide `#providerRow` first, see the note at the top of this section)
 4. **Ollama URL** → `http://localhost:11434/v1` (leave default)
 5. **Ollama Model** → exact name you pulled, e.g. `qwen2.5:7b`
 6. Click **Save Settings** — the pill should now read `Ollama · qwen2.5:7b`
@@ -107,6 +107,25 @@ First call is slow (~10–30s) because Ollama loads the model into memory; later
 | `Cannot reach Ollama at ...` | Ollama not running, or wrong URL | Start Ollama; check the URL field |
 | Very slow / timeouts | Model too big for your RAM | Pull a smaller variant (`:3b` instead of `:7b`) |
 | Empty / malformed output | Model name typo, or model not pulled | Run `ollama list` to see exact names |
+
+## Evaluation
+
+The full evaluation pipeline (data collection, prediction runs, scoring) lives in a separate repo: [melodyyunghsin/AI-news-stock-analysis-evaluation](https://github.com/melodyyunghsin/AI-news-stock-analysis-evaluation). This repo keeps only the summary outputs needed to document results and drive the in-extension reliability badge.
+
+**Scope.** The current two-step pipeline was evaluated on 7 tickers — AAPL, NVDA, GOOG, AMZN, TSLA, TSM, MSFT — across 5 horizons (1d / 3d / 5d / 10d / 21d), using `gemini-2.5-flash-lite`. Headline finding: direction calls are at chance (MCC 95% CI spanning 0) for most ticker × horizon combinations; only **TSM @ 10d** is a statistically significant signal, while a few combinations are significantly worse than random.
+
+**Summary data** lives in [evaluation_summary/](evaluation_summary/):
+- `accuracy_by_ticker_all_horizons.csv` — per ticker × horizon: samples, direction accuracy, weighted F1, MCC + 95% CI. **This is the file the extension reads from** (via the regeneration step below).
+- `accuracy_by_ticker_{1d,3d,5d,10d,21d}.csv` — the same broken out per horizon.
+- `baselines_*.csv` — naive baselines (majority-class, non-LLM) for comparison.
+- `metrics_by_*.csv` — breakdowns by confidence / relevance / magnitude / calibration threshold and article tone.
+- `overall_metrics_by_horizon*.csv` — one-row-per-horizon summaries.
+
+**Regenerating the reliability badge data.** After updating `evaluation_summary/accuracy_by_ticker_all_horizons.csv`, run:
+```bash
+python results_to_json.py
+```
+This writes `extension_data/ticker_reliability_by_horizon.json`, which the extension loads at runtime. The `TICKER_ALLOWLIST` constant in [results_to_json.py](results_to_json.py) gates which tickers are included — any ticker not listed shows "No History" in the UI.
 
 ## Version History
 
